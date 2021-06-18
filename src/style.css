@@ -1,0 +1,11 @@
+.App {
+    background-image: url("./images/marble-red-01.jpg");
+    background-size: 50%;
+    padding-top: 0.1%;
+    padding-bottom: 0.1%;
+}
+
+.header {
+    color: red;
+    font-size: 80px;
+}
