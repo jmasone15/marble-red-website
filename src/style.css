@@ -9,3 +9,13 @@
     color: red;
     font-size: 80px;
 }
+
+.divider {
+    background-color: rgba(246, 80, 80, 0.979);
+    padding-top: 300px;
+}
+
+.Music {
+    background-color: rgba(153, 153, 153, 0.979);
+    padding-top: 100px;
+}
