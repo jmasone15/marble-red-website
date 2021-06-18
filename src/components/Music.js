@@ -7,7 +7,7 @@ import Carousel from "react-bootstrap/Carousel";
 export default function Music() {
     return (
         <Container>
-            <Row style={{ marginTop: "100px", marginBottom: "100px" }}>
+            <Row style={{ marginTop: "100px", marginBottom: "200px" }}>
                 <Col>
                     <Carousel>
                         <Carousel.Item>

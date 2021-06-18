@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./components/Header";
 import TopBar from "./components/TopBar";
 import Music from "./components/Music";
+import AboutMe from "./components/AboutMe";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -37,6 +38,13 @@ function App() {
         <Row>
           <Col>
             <h1 style={{ opacity: "0" }}>Blank Title</h1>
+          </Col>
+        </Row>
+      </Container>
+      <Container fluid className="Music">
+        <Row>
+          <Col>
+            <AboutMe id="about" />
           </Col>
         </Row>
       </Container>
