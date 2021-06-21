@@ -55,19 +55,24 @@ html {
 }
 
 .first-drop-text:hover {
-  color: #e94a4a;
+  color: #584141;
 }
 
 .second-drop-text:hover {
-  color: #e94a4a;
+  color: #584141;
 }
 
 .third-drop-text:hover {
-  color: #e94a4a;
+  color: #584141;
 }
 
 .fourth-drop-text:hover {
-  color: #e94a4a;
+  color: #584141;
+}
+
+.header-link {
+  color: inherit;
+  text-decoration: none;
 }
 
 .first-drop-text {
