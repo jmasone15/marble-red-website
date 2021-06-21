@@ -9,6 +9,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "./output.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Social from "./components/Social";
 
 function App() {
   return (
@@ -21,10 +22,10 @@ function App() {
           </Col>
         </Row>
       </Container>
-      <Container fluid className="divider">
+      <Container fluid className="Social">
         <Row>
           <Col>
-            <h1 style={{ opacity: "0" }}>Blank Title</h1>
+            <Social />
           </Col>
         </Row>
       </Container>
