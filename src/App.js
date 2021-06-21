@@ -13,22 +13,28 @@ import Social from "./components/Social";
 
 function App() {
   return (
-    <Container fluid style={{ padding: "0" }}>
-      <TopBar />
-      <Container fluid className="parallax" id="home">
-        <Row style={{ marginTop: "22%" }}>
+    <Container fluid className="parallax" style={{ padding: "0" }}>
+      <Container>
+        <Row style={{ textAlign: "center" }}>
           <Col>
-            <Header />
+            <TopBar />
           </Col>
         </Row>
-        <Row style={{ marginBottom: "500px", marginTop: "400px" }}>
-          <Col style={{ textAlign: "center" }}>
-            <a className="arrow-icon" href="#social">
-              <span className="left-bar"></span>
-              <span className="right-bar"></span>
-            </a>
-          </Col>
-        </Row>
+        <Container fluid id="home">
+          <Row style={{ marginTop: "33%", marginLeft: "30px" }}>
+            <Col>
+              <Header />
+            </Col>
+          </Row>
+          <Row style={{ marginBottom: "300px", marginTop: "450px" }}>
+            <Col style={{ textAlign: "center" }}>
+              <a className="arrow-icon" href="#social">
+                <span className="left-bar"></span>
+                <span className="right-bar"></span>
+              </a>
+            </Col>
+          </Row>
+        </Container>
       </Container>
       <Container fluid className="Social" id="social">
         <Row>

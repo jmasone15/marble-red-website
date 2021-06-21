@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -52,11 +53,46 @@ html {
     padding-bottom: 0.1%;
 }
 
-.header {
-    color: #e63946;
-    font-size: 80px;
-    font-family: 'Dela Gothic One', cursive;
-    box-shadow: 10px azure;
+.op0 {
+    opacity: 0;
+}
+
+.trans-back {
+    background-color: transparent;
+}
+
+.first-drop-text:hover {
+    color: rgb(233, 74, 74);
+}
+.second-drop-text:hover {
+    color: rgb(233, 74, 74);
+}
+.third-drop-text:hover {
+    color: rgb(233, 74, 74);
+}
+.fourth-drop-text:hover {
+    color: rgb(233, 74, 74);
+}
+
+.first-drop-text {
+    cursor: pointer;
+    color: white;
+    font-family: 'Righteous', cursive;
+}
+.second-drop-text {
+    cursor: pointer;
+    color: white;
+    font-family: 'Righteous', cursive;
+}
+.third-drop-text {
+    cursor: pointer;
+    color: white;
+    font-family: 'Righteous', cursive;
+}
+.fourth-drop-text {
+    cursor: pointer;
+    color: white;
+    font-family: 'Righteous', cursive;
 }
 
 $easing: cubic-bezier(.25,1.7,.35,.8);
@@ -294,6 +330,7 @@ $root: '.c-rainbow';
  align-items: center;
  justify-content: center;
  text-align: center;
+ font-family: 'Righteous', cursive;
 }
 
 #{$root} {
