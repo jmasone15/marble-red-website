@@ -106,7 +106,7 @@ html {
   font-size: 6rem;
   color: var(--text-color);
   text-shadow: -1px -1px 0 var(--color-black), 1px -1px 0 var(--color-black), -1px 1px 0 var(--color-black), 1px 1px 0 var(--color-black), 4px 4px 0 rgba(0, 0, 0, 0.2);
-  animation: rainbow 1.5s ease-in-out infinite;
+  animation: rainbow 5s ease-in-out infinite;
 }
 .c-rainbow__layer:nth-child(1) {
   animation-delay: calc( 1 / var(--delay) * 1.5s);
@@ -164,10 +164,10 @@ html {
 
 @keyframes rainbow {
   0%, 100% {
-    transform: translatey(var(--axis-y));
+    transform: translatey(calc(var(--axis-y) * 3));
   }
   50% {
-    transform: translatey(calc(var(--axis-y) * -1.5));
+    transform: translatey(calc(var(--axis-y) * -3));
   }
 }
 
