@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url(//db.onlinewebfonts.com/c/9a4b138bd9c8e1eba20dbd6a0bb1d832?family=Cooper+Black);
 html {
   scroll-behavior: smooth;
 }
@@ -55,19 +56,19 @@ html {
 }
 
 .first-drop-text:hover {
-  color: #584141;
+  color: #FB5607;
 }
 
 .second-drop-text:hover {
-  color: #584141;
+  color: #FB5607;
 }
 
 .third-drop-text:hover {
-  color: #584141;
+  color: #FB5607;
 }
 
 .fourth-drop-text:hover {
-  color: #584141;
+  color: #FB5607;
 }
 
 .header-link {
@@ -77,26 +78,26 @@ html {
 
 .first-drop-text {
   cursor: pointer;
-  color: white;
-  font-family: "Righteous", cursive;
+  color: #FFBE0B;
+  font-family: "Cooper Black";
 }
 
 .second-drop-text {
   cursor: pointer;
-  color: white;
-  font-family: "Righteous", cursive;
+  color: #FFBE0B;
+  font-family: "Cooper Black";
 }
 
 .third-drop-text {
   cursor: pointer;
-  color: white;
-  font-family: "Righteous", cursive;
+  color: #FFBE0B;
+  font-family: "Cooper Black";
 }
 
 .fourth-drop-text {
   cursor: pointer;
-  color: white;
-  font-family: "Righteous", cursive;
+  color: #FFBE0B;
+  font-family: "Cooper Black";
 }
 
 .arrow-icon {
@@ -164,7 +165,7 @@ html {
 }
 
 .Social {
-  background-color: rgba(246, 80, 80, 0.979);
+  background-color: #FB5607;
   color: white;
   padding-top: 100px;
 }
@@ -307,14 +308,14 @@ to align it properly */
   --axis-y: 1rem;
   --delay: 10;
   --color-black: #000;
-  --color-white: #fff;
-  --color-orange: #D49C3D;
-  --color-red: #D14B3D;
+  --color-pink: #FF006E;
+  --color-orange: #FB5607;
+  --color-red: #06D6A0;
   --color-violet: #CF52EB;
   --color-blue: #44A3F7;
   --color-green: #5ACB3C;
-  --color-yellow: #DEBF40;
-  --color-foreground: var(--color-white);
+  --color-yellow: #FFBE0B;
+  --color-foreground: var(--color-pink);
   --font-name: Righteous;
 }
 
@@ -323,7 +324,7 @@ to align it properly */
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-family: "Righteous", cursive;
+  font-family: "Cooper Black";
 }
 
 .c-rainbow {
@@ -374,8 +375,8 @@ to align it properly */
   position: absolute;
   top: 0;
 }
-.c-rainbow__layer--white {
-  --text-color: var(--color-white);
+.c-rainbow__layer--pink {
+  --text-color: var(--color-pink);
 }
 .c-rainbow__layer--orange {
   --text-color: var(--color-orange);

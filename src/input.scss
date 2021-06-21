@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url(//db.onlinewebfonts.com/c/9a4b138bd9c8e1eba20dbd6a0bb1d832?family=Cooper+Black);
 
 html {
     scroll-behavior: smooth;
@@ -62,16 +63,16 @@ html {
 }
 
 .first-drop-text:hover {
-    color: rgb(88, 65, 65);
+    color: #FB5607;
 }
 .second-drop-text:hover {
-    color: rgb(88, 65, 65);
+    color: #FB5607;
 }
 .third-drop-text:hover {
-    color: rgb(88, 65, 65);
+    color: #FB5607;
 }
 .fourth-drop-text:hover {
-    color: rgb(88, 65, 65);
+    color: #FB5607;
 }
 
 .header-link {
@@ -81,23 +82,23 @@ html {
 
 .first-drop-text {
     cursor: pointer;
-    color: white;
-    font-family: 'Righteous', cursive;
+    color: #FFBE0B;
+    font-family: "Cooper Black";
 }
 .second-drop-text {
     cursor: pointer;
-    color: white;
-    font-family: 'Righteous', cursive;
+    color: #FFBE0B;
+    font-family: "Cooper Black";
 }
 .third-drop-text {
     cursor: pointer;
-    color: white;
-    font-family: 'Righteous', cursive;
+    color: #FFBE0B;
+    font-family: "Cooper Black";
 }
 .fourth-drop-text {
     cursor: pointer;
-    color: white;
-    font-family: 'Righteous', cursive;
+    color: #FFBE0B;
+    font-family: "Cooper Black";
 }
 
 $easing: cubic-bezier(.25,1.7,.35,.8);
@@ -168,7 +169,7 @@ $duration: 0.5s;
 }
 
 .Social {
-    background-color: rgba(246, 80, 80, 0.979);
+    background-color: #FB5607;
     color: white;
     padding-top: 100px;
 }
@@ -318,15 +319,15 @@ $root: '.c-rainbow';
  --delay: 10;
  
  --color-black: #000;
- --color-white: #fff;
- --color-orange: #D49C3D;
- --color-red: #D14B3D;
+ --color-pink: #FF006E;
+ --color-orange: #FB5607;
+ --color-red: #06D6A0;
  --color-violet: #CF52EB;
  --color-blue: #44A3F7;
  --color-green: #5ACB3C;
- --color-yellow: #DEBF40;
+ --color-yellow: #FFBE0B;
  
- --color-foreground: var(--color-white);
+ --color-foreground: var(--color-pink);
  --font-name: Righteous;
 }
 
@@ -335,7 +336,8 @@ $root: '.c-rainbow';
  align-items: center;
  justify-content: center;
  text-align: center;
- font-family: 'Righteous', cursive;
+//  font-family: 'Righteous', cursive;
+font-family: "Cooper Black";
 }
 
 #{$root} {
@@ -376,7 +378,7 @@ $root: '.c-rainbow';
    top: 0;
   }
 
-  &--white  { --text-color: var(--color-white)}
+  &--pink  { --text-color: var(--color-pink)}
   &--orange { --text-color: var(--color-orange)}
   &--red    { --text-color: var(--color-red)}
   &--violet { --text-color: var(--color-violet)}
