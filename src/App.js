@@ -7,17 +7,17 @@ import Footer from "./components/Footer";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import "./style.css";
+import "./output.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <Container fluid style={{ padding: "0" }}>
       <TopBar />
-      <Container fluid className="App">
+      <Container fluid className="parallax" id="home">
         <Row style={{ marginTop: "25%", marginBottom: "25%" }}>
-          <Col style={{ textAlign: "center" }}>
-            <Header id="home" />
+          <Col>
+            <Header />
           </Col>
         </Row>
       </Container>
@@ -28,10 +28,10 @@ function App() {
           </Col>
         </Row>
       </Container>
-      <Container fluid className="Music">
+      <Container fluid className="parallax-music" id="music">
         <Row>
           <Col>
-            <Music id="music" />
+            <Music />
           </Col>
         </Row>
       </Container>
@@ -42,14 +42,14 @@ function App() {
           </Col>
         </Row>
       </Container>
-      <Container fluid className="Music">
+      <Container fluid className=" parallax-about" id="about">
         <Row>
           <Col>
-            <AboutMe id="about" />
+            <AboutMe />
           </Col>
         </Row>
       </Container>
-      <Container fluid className="Footer">
+      <Container fluid className="Footer" id="contact">
         <Row>
           <Col>
             <Footer />

@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("./images/marble-red-01.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    padding-top: 0.1%;
+    padding-bottom: 0.1%;
+}
+
+.parallax-music {
+  /* The image used */
+  background-image: url("./images/thumb16.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    padding-top: 0.1%;
+    padding-bottom: 0.1%;
+}
+
+.parallax-about {
+  /* The image used */
+  background-image: url("./images/_75745654_466377933.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    padding-top: 0.1%;
+    padding-bottom: 0.1%;
+}
+
+.header {
+    color: #e63946;
+    font-size: 80px;
+    font-family: 'Dela Gothic One', cursive;
+    box-shadow: 10px azure;
+}
+
+.divider {
+    background-color: rgba(246, 80, 80, 0.979);
+    padding-top: 300px;
+}
+
+.Music {
+    background-color: rgba(153, 153, 153, 0.979);
+    padding-top: 100px;
+}
+
+.Footer {
+    background-color: rgba(246, 80, 80, 0.979);
+    color: white;
+    padding-top: 100px;
+}
+
+
+$root: '.c-rainbow';
+
+:root {
+ --color-background: #31037D;
+ 
+ --axis-x: 1px;
+ --axis-y: 1rem;
+ --delay: 10;
+ 
+ --color-black: #000;
+ --color-white: #fff;
+ --color-orange: #D49C3D;
+ --color-red: #D14B3D;
+ --color-violet: #CF52EB;
+ --color-blue: #44A3F7;
+ --color-green: #5ACB3C;
+ --color-yellow: #DEBF40;
+ 
+ --color-foreground: var(--color-white);
+ --font-name: Righteous;
+}
+
+.this {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+}
+
+#{$root} {
+ counter-reset: rainbow;
+ position: relative;
+ display: block;
+ 
+ list-style: none;
+ 
+ padding: 0;
+ margin: 0;
+ 
+ &__layer {
+  --text-color: var(--color-foreground);
+  counter-increment: rainbow; 
+  font-size: 6rem;
+  color: var(--text-color);
+
+  text-shadow:
+   -1px -1px 0 var(--color-black),  
+    1px -1px 0 var(--color-black),
+    -1px 1px 0 var(--color-black),
+     1px 1px 0 var(--color-black),
+   
+     4px 4px 0 rgba(0, 0, 0, .2);
+  
+  animation: rainbow 1.5s ease-in-out infinite;
+  
+  @for $i from 1 through 7 {
+   &:nth-child(#{$i}) {
+    animation-delay: calc( #{$i} / var(--delay) * 1.5s);
+    z-index: #{$i * 10};
+   }
+  }
+  
+  &:not(:first-child) {
+   position: absolute;
+   top: 0;
+  }
+
+  &--white  { --text-color: var(--color-white)}
+  &--orange { --text-color: var(--color-orange)}
+  &--red    { --text-color: var(--color-red)}
+  &--violet { --text-color: var(--color-violet)}
+  &--blue   { --text-color: var(--color-blue)}
+  &--green  { --text-color: var(--color-green)}
+  &--yellow { --text-color: var(--color-yellow)}
+ }
+}
+
+@keyframes rainbow {
+ 0%, 100% {
+  transform: translatey(var(--axis-y)); 
+ }
+ 50% {
+  transform: translatey(calc(var(--axis-y) * -1.5));
+ }
+} 
