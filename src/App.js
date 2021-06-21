@@ -16,13 +16,21 @@ function App() {
     <Container fluid style={{ padding: "0" }}>
       <TopBar />
       <Container fluid className="parallax" id="home">
-        <Row style={{ marginTop: "25%", marginBottom: "25%" }}>
+        <Row style={{ marginTop: "22%" }}>
           <Col>
             <Header />
           </Col>
         </Row>
+        <Row style={{ marginBottom: "500px", marginTop: "400px" }}>
+          <Col style={{ textAlign: "center" }}>
+            <a className="arrow-icon" href="#social">
+              <span className="left-bar"></span>
+              <span className="right-bar"></span>
+            </a>
+          </Col>
+        </Row>
       </Container>
-      <Container fluid className="Social">
+      <Container fluid className="Social" id="social">
         <Row>
           <Col>
             <Social />
@@ -57,7 +65,7 @@ function App() {
           </Col>
         </Row>
       </Container>
-    </ Container>
+    </ Container >
   );
 }
 

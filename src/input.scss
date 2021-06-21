@@ -59,6 +59,63 @@ html {
     box-shadow: 10px azure;
 }
 
+$easing: cubic-bezier(.25,1.7,.35,.8);
+$duration: 0.5s;
+
+.arrow-icon {
+  height: 2.8em;
+  width: 2.8em;
+  padding: 0.5em;
+  margin: 1em auto;
+  position: relative;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.left-bar {
+  position: absolute;
+  background-color: transparent;
+  top: 0;
+  left:0;
+  width: 40px;
+  height: 10px;
+  transform: rotate(35deg);
+  float: right;
+  border-radius: 2px;
+  &:after {
+    content:"";
+    background-color: white;
+    width: 40px;
+    height: 10px;
+    float: right;
+    border-radius: 6px 10px 10px 6px;
+    transition: all $duration $easing;
+    z-index: -1;
+  }
+}
+
+.right-bar {
+  position: absolute;
+  background-color: transparent;
+  top: 0px;
+  left:26px;
+  width: 40px;
+  height: 10px;
+  transform: rotate(-35deg);
+  float: right;
+  border-radius: 2px;
+  &:after {
+    content:"";
+    background-color: white;
+    width: 40px;
+    height: 10px;
+    float: right;
+    border-radius: 10px 6px 6px 10px;
+    transition: all $duration $easing;
+    z-index: -1;
+  }
+}
+
 .divider {
     background-color: rgba(246, 80, 80, 0.979);
     padding-top: 300px;
@@ -78,7 +135,7 @@ html {
 .Footer {
     background-color: rgba(246, 80, 80, 0.979);
     color: white;
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 .wrapper {
@@ -129,7 +186,6 @@ to align it properly */
 
 .wrapper ul li:hover .fa-facebook {
   color: #00aced;
-  text-shadow: 0 0 15px #00aced;
   transition: all 0.5s ease;
 }
 
@@ -142,46 +198,42 @@ to align it properly */
 
 .wrapper ul li:hover .fa-apple {
   color: #a4c0ca;
-  text-shadow: 0 0 15px #a4c0ca;
   transition: all 0.5s ease;
 }
 
 /* instagram */
 .wrapper ul li:hover.instagram {
   border: 5px solid #f540bc;
-  box-shadow: 0 0 15px #f540bc;
+  box-shadow: 0 0 15px #fff;
   transition: all 0.5s ease;
 }
 
 .wrapper ul li:hover .fa-instagram {
   color: #f540bc;
-  text-shadow: 0 0 15px #f540bc;
   transition: all 0.5s ease;
 }
 
 /* twitch */
 .wrapper ul li:hover.twitch {
   border: 5px solid #bc1fd8;
-  box-shadow: 0 0 15px #bc1fd8;
+  box-shadow: 0 0 15px #fff;
   transition: all 0.5s ease;
 }
 
 .wrapper ul li:hover .fa-twitch {
   color: #bc1fd8;
-  text-shadow: 0 0 15px #bc1fd8;
   transition: all 0.5s ease;
 }
 
 /* spotify */
 .wrapper ul li:hover.spotify {
   border: 5px solid #4dc247;
-  box-shadow: 0 0 15px #4dc247;
+  box-shadow: 0 0 15px #fff;
   transition: all 0.5s ease;
 }
 
 .wrapper ul li:hover .fa-spotify {
   color: #4dc247;
-  text-shadow: 0 0 15px #4dc247;
   transition: all 0.5s ease;
 }
 
