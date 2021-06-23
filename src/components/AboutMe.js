@@ -71,28 +71,13 @@ export default function AboutMe() {
                                     </Row>
                                     <Row style={{ marginTop: "150px" }}>
                                         <Col>
-                                            <Container>
-                                                <Row>
-                                                    <Col>
-                                                        <h3>Something</h3>
-                                                        <br />
-                                                        <p>blah blah blah blah blah</p>
-                                                        <p>blah blah blah blah blah</p>
-                                                        <p>blah blah blah blah blah</p>
-                                                        <p>blah blah blah blah blah</p>
-                                                        <p>blah blah blah blah blah</p>
-                                                    </Col>
-                                                    <Col style={{ textAlign: "right" }}>
-                                                        <h3>Something Else</h3>
-                                                        <br />
-                                                        <p>blah blah blah blah blah</p>
-                                                        <p>blah blah blah blah blah</p>
-                                                        <p>blah blah blah blah blah</p>
-                                                        <p>blah blah blah blah blah</p>
-                                                        <p>blah blah blah blah blah</p>
-                                                    </Col>
-                                                </Row>
-                                            </Container>
+                                            <h3>Something</h3>
+                                            <br />
+                                            <h5>blah blah blah blah blah blah blah blah blah blah</h5>
+                                            <h5>blah blah blah blah blah blah blah blah blah blah</h5>
+                                            <h5>blah blah blah blah blah blah blah blah blah blah</h5>
+                                            <h5>blah blah blah blah blah blah blah blah blah blah</h5>
+                                            <h5>blah blah blah blah blah blah blah blah blah blah</h5>
                                         </Col>
                                     </Row>
                                 </Container>

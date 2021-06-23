@@ -26,12 +26,14 @@ function App() {
               <Header />
             </Col>
           </Row>
-          <Row style={{ marginBottom: "300px", marginTop: "450px" }}>
-            <Col style={{ textAlign: "center" }}>
-              <a className="arrow-icon" href="#social">
-                <span className="left-bar"></span>
-                <span className="right-bar"></span>
-              </a>
+          <Row style={{ marginBottom: "300px", marginTop: "450px", textAlign: "center" }}>
+            <Col className="scroll">
+              <div className="scrolldown" >
+                <div className="chevrons">
+                  <div className="chevrondown"></div>
+                  <div className="chevrondown"></div>
+                </div>
+              </div>
             </Col>
           </Row>
         </Container>
