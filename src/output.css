@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 @import url("https://db.onlinewebfonts.com/c/9a4b138bd9c8e1eba20dbd6a0bb1d832?family=Cooper+Black");
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
 html {
   scroll-behavior: smooth;
 }
@@ -493,6 +494,29 @@ to align it properly */
     transform: translatey(calc(var(--axis-y) * -3));
   }
 }
+.about-head {
+  font-size: 35px;
+  font-family: "Acme", sans-serif;
+  color: #fff;
+}
+
+.about-name {
+  font-size: 80px;
+  font-family: "Cooper Black";
+  color: #c1121f;
+}
+
+.about-card {
+  font-family: "Acme", sans-serif;
+  padding: 10px;
+  background-color: #FFBE0B;
+  color: #FB5607;
+}
+
+.about-text {
+  font-size: 25px;
+}
+
 .contact-button {
   position: relative;
   display: inline-flex;
@@ -509,7 +533,7 @@ to align it properly */
   transform-style: preserve-3d;
   transform: translateZ(-25px);
   transition: transform 0.25s;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Acme", sans-serif;
 }
 
 .contact-button .contact-link:before,
@@ -521,19 +545,19 @@ to align it properly */
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 5px solid black;
+  border: 5px solid #fff;
   box-sizing: border-box;
   border-radius: 5px;
 }
 
 .contact-button .contact-link:before {
-  color: #fff;
-  background: #000;
+  color: #d00000;
+  background: #fff;
   transform: rotateY(0deg) translateZ(25px);
 }
 
 .contact-button .contact-link:after {
-  color: #000;
+  color: #d00000;
   content: "LETS CHAT";
   transform: rotateX(90deg) translateZ(25px);
 }

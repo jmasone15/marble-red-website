@@ -55,12 +55,12 @@ export default function AboutMe() {
                                 <Container>
                                     <Row>
                                         <Col>
-                                            <h1 style={{ fontSize: "35px" }}>A little about...</h1>
+                                            <h1 className="about-head">A little about...</h1>
                                         </Col>
                                     </Row>
                                     <Row>
                                         <Col>
-                                            <h1 style={{ fontSize: "70px" }}>Marble Red</h1>
+                                            <h1 className="about-name">Marble Red</h1>
                                         </Col>
                                     </Row>
                                     <br />
@@ -71,13 +71,15 @@ export default function AboutMe() {
                                     </Row>
                                     <Row style={{ marginTop: "150px" }}>
                                         <Col>
-                                            <h3>Something</h3>
-                                            <br />
-                                            <h5>blah blah blah blah blah blah blah blah blah blah</h5>
-                                            <h5>blah blah blah blah blah blah blah blah blah blah</h5>
-                                            <h5>blah blah blah blah blah blah blah blah blah blah</h5>
-                                            <h5>blah blah blah blah blah blah blah blah blah blah</h5>
-                                            <h5>blah blah blah blah blah blah blah blah blah blah</h5>
+                                            <Card className="about-card">
+                                                <h1>Hi there!</h1>
+                                                <br />
+                                                <h5 className="about-text">blah blah blah blah blah blah blah blah blah blah</h5>
+                                                <h5 className="about-text">blah blah blah blah blah blah blah blah blah blah</h5>
+                                                <h5 className="about-text">blah blah blah blah blah blah blah blah blah blah</h5>
+                                                <h5 className="about-text">blah blah blah blah blah blah blah blah blah blah</h5>
+                                                <h5 className="about-text">blah blah blah blah blah blah blah blah blah blah</h5>
+                                            </Card>
                                         </Col>
                                     </Row>
                                 </Container>
