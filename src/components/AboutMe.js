@@ -17,7 +17,7 @@ export default function AboutMe() {
     const handleShow = () => setShow(true);
 
     return (
-        <Container>
+        <Container fluid>
             <Row>
                 <Col>
                     <Modal show={show} onHide={handleClose} size="lg" aria-labelledby="example-modal-sizes-title-lg">
@@ -48,32 +48,32 @@ export default function AboutMe() {
                     </Modal>
                 </Col>
             </Row>
-            <Row style={{ marginBottom: "100px", marginTop: "100px" }}>
+            <Row style={{ marginBottom: "100px", marginTop: "150px" }}>
                 <Col>
                     <Container fluid>
                         <Row>
                             <Col>
-                                <Container>
-                                    <Row style={{ marginLeft: "-100px" }}>
+                                <Container fluid>
+                                    <Row>
                                         <Col>
                                             <h1 className="about-head">A little about...</h1>
                                         </Col>
                                     </Row>
-                                    <Row style={{ marginLeft: "-100px" }}>
+                                    <Row>
                                         <Col>
                                             <Fade top big cascade>
                                                 <h1 className="about-name">Marble Red</h1>
                                             </Fade>
                                         </Col>
                                     </Row>
-                                    <Row style={{ marginLeft: "-120px" }}>
+                                    <Row style={{ marginLeft: "-30px" }}>
                                         <Col>
                                             <Fade left>
                                                 <span className="contact-button"><span onClick={handleShow} className="contact-link"></span></span>
                                             </Fade>
                                         </Col>
                                     </Row>
-                                    <Row style={{ marginTop: "150px", marginLeft: "-120px" }}>
+                                    <Row style={{ marginTop: "170px", paddingBottom: "100px" }}>
                                         <Col>
                                             <Slide top cascade>
                                                 <div className="about-card">
@@ -88,10 +88,8 @@ export default function AboutMe() {
                                     </Row>
                                 </Container>
                             </Col>
-                            <Col style={{ marginTop: "-300px", marginRight: "-400px" }}>
-                                <Fade right>
-                                    <img src={image} alt="Marble Red" style={{ height: "1000px", width: "800px" }} />
-                                </Fade>
+                            <Col>
+                                <div className='record'></div>
                             </Col>
                         </Row>
                     </Container>

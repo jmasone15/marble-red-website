@@ -41,7 +41,6 @@ html {
   /* Create the parallax scrolling effect */
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
   padding-top: 0.1%;
   padding-bottom: 0.1%;
 }
@@ -151,6 +150,35 @@ html {
   border-radius: 10px 6px 6px 10px;
   transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 0.8);
   z-index: -1;
+}
+
+.record {
+  position: relative;
+  margin-left: -100px;
+  margin-top: -100px;
+  width: 800px;
+  height: 800px;
+  border-radius: 50%;
+  background: linear-gradient(30deg, transparent 40%, rgba(42, 41, 40, 0.85) 40%) no-repeat 100% 0, linear-gradient(60deg, rgba(42, 41, 40, 0.85) 60%, transparent 60%) no-repeat 0 100%, repeating-radial-gradient(#2a2928, #2a2928 4px, #ada9a0 5px, #2a2928 6px);
+  background-size: 50% 100%, 100% 50%, 100% 100%;
+  animation-name: record;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+
+.record:after {
+  position: absolute;
+  top: 39%;
+  left: 39%;
+  margin: -35px;
+  border: solid 1px #d9a388;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-image: url("./images/69-692697_paige-face-circle-face-in-a-circle-hd.png");
+  content: "";
+  background-position: center;
 }
 
 .follow {
@@ -512,7 +540,6 @@ to align it properly */
 
 .about-card {
   font-family: "Acme", sans-serif;
-  padding: 10px;
   color: #555b6e;
 }
 
