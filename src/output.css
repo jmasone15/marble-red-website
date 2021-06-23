@@ -35,7 +35,15 @@ html {
 }
 
 .parallax-about {
-  background-color: #bcb8b1;
+  background-image: url("./images/4003633.jpg");
+  /* Set a specific height */
+  min-height: 500px;
+  /* Create the parallax scrolling effect */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 0.1%;
+  padding-bottom: 0.1%;
 }
 
 .op0 {
@@ -148,10 +156,6 @@ html {
 .follow {
   font-family: "Cooper Black";
   font-size: 60px;
-}
-
-.about-card {
-  background-color: rgba(153, 153, 153, 0.979);
 }
 
 .divider {
@@ -509,12 +513,11 @@ to align it properly */
 .about-card {
   font-family: "Acme", sans-serif;
   padding: 10px;
-  background-color: #FFBE0B;
-  color: #FB5607;
+  color: #555b6e;
 }
 
 .about-text {
-  font-size: 25px;
+  font-size: 28px;
 }
 
 .contact-button {

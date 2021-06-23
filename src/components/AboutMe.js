@@ -53,38 +53,35 @@ export default function AboutMe() {
                         <Row>
                             <Col>
                                 <Container>
-                                    <Row>
+                                    <Row style={{ marginLeft: "-100px" }}>
                                         <Col>
                                             <h1 className="about-head">A little about...</h1>
                                         </Col>
                                     </Row>
-                                    <Row>
+                                    <Row style={{ marginLeft: "-100px" }}>
                                         <Col>
                                             <h1 className="about-name">Marble Red</h1>
                                         </Col>
                                     </Row>
-                                    <br />
-                                    <Row>
+                                    <Row style={{ marginLeft: "-120px" }}>
                                         <Col>
                                             <span className="contact-button"><span onClick={handleShow} className="contact-link"></span></span>
                                         </Col>
                                     </Row>
-                                    <Row style={{ marginTop: "150px" }}>
+                                    <Row style={{ marginTop: "150px", marginLeft: "-120px" }}>
                                         <Col>
-                                            <Card className="about-card">
-                                                <h1>Hi there!</h1>
-                                                <br />
+                                            <div className="about-card">
                                                 <h5 className="about-text">blah blah blah blah blah blah blah blah blah blah</h5>
                                                 <h5 className="about-text">blah blah blah blah blah blah blah blah blah blah</h5>
                                                 <h5 className="about-text">blah blah blah blah blah blah blah blah blah blah</h5>
                                                 <h5 className="about-text">blah blah blah blah blah blah blah blah blah blah</h5>
                                                 <h5 className="about-text">blah blah blah blah blah blah blah blah blah blah</h5>
-                                            </Card>
+                                            </div>
                                         </Col>
                                     </Row>
                                 </Container>
                             </Col>
-                            <Col style={{ marginTop: "-300px", marginRight: "-300px" }}>
+                            <Col style={{ marginTop: "-300px", marginRight: "-400px" }}>
                                 <img src={image} alt="Marble Red" style={{ height: "1000px", width: "800px" }} />
                             </Col>
                         </Row>

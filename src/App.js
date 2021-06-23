@@ -59,7 +59,7 @@ function App() {
           </Col>
         </Row>
       </Container>
-      <Container fluid className=" parallax-about" id="about">
+      <Container fluid className="parallax-about" id="about">
         <Row>
           <Col>
             <AboutMe />
