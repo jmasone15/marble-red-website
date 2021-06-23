@@ -161,10 +161,6 @@ html {
   border-radius: 50%;
   background: linear-gradient(30deg, transparent 40%, rgba(42, 41, 40, 0.85) 40%) no-repeat 100% 0, linear-gradient(60deg, rgba(42, 41, 40, 0.85) 60%, transparent 60%) no-repeat 0 100%, repeating-radial-gradient(#2a2928, #2a2928 4px, #ada9a0 5px, #2a2928 6px);
   background-size: 50% 100%, 100% 50%, 100% 100%;
-  animation-name: record;
-  animation-iteration-count: infinite;
-  animation-duration: 1s;
-  animation-timing-function: linear;
 }
 
 .record:after {
@@ -181,6 +177,43 @@ html {
   background-position: center;
 }
 
+.record-spin {
+  position: relative;
+  margin-left: -100px;
+  margin-top: -100px;
+  width: 800px;
+  height: 800px;
+  border-radius: 50%;
+  background: linear-gradient(30deg, transparent 40%, rgba(42, 41, 40, 0.85) 40%) no-repeat 100% 0, linear-gradient(60deg, rgba(42, 41, 40, 0.85) 60%, transparent 60%) no-repeat 0 100%, repeating-radial-gradient(#2a2928, #2a2928 4px, #ada9a0 5px, #2a2928 6px);
+  background-size: 50% 100%, 100% 50%, 100% 100%;
+  animation-name: record;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+}
+
+.record-spin:after {
+  position: absolute;
+  top: 39%;
+  left: 39%;
+  margin: -35px;
+  border: solid 1px #d9a388;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-image: url("./images/69-692697_paige-face-circle-face-in-a-circle-hd.png");
+  content: "";
+  background-position: center;
+}
+
+@keyframes record {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .follow {
   font-family: "Cooper Black";
   font-size: 60px;
@@ -547,7 +580,7 @@ to align it properly */
   font-size: 28px;
 }
 
-.contact-button {
+.record-button {
   position: relative;
   display: inline-flex;
   width: 180px;
@@ -557,7 +590,7 @@ to align it properly */
   cursor: pointer;
 }
 
-.contact-button .contact-link {
+.record-button .record-link {
   font-size: 19px;
   letter-spacing: 1px;
   transform-style: preserve-3d;
@@ -566,10 +599,10 @@ to align it properly */
   font-family: "Acme", sans-serif;
 }
 
-.contact-button .contact-link:before,
-.contact-button .contact-link:after {
+.record-button .record-link:before,
+.record-button .record-link:after {
   position: absolute;
-  content: "CONTACT";
+  content: "PLAY ME";
   height: 55px;
   width: 180px;
   display: flex;
@@ -580,19 +613,19 @@ to align it properly */
   border-radius: 5px;
 }
 
-.contact-button .contact-link:before {
+.record-button .record-link:before {
   color: #d00000;
   background: #fff;
   transform: rotateY(0deg) translateZ(25px);
 }
 
-.contact-button .contact-link:after {
+.record-button .record-link:after {
   color: #d00000;
-  content: "LETS CHAT";
+  content: "FOR YOU";
   transform: rotateX(90deg) translateZ(25px);
 }
 
-.contact-button .contact-link:hover {
+.record-button .record-link:hover {
   transform: translateZ(-25px) rotateX(-90deg);
 }
 

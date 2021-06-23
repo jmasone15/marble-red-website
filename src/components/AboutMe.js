@@ -8,13 +8,25 @@ import Form from "react-bootstrap/Form";
 import image from "../images/marble-red-03-removebg-preview.png";
 import Fade from "react-reveal/Fade";
 import Slide from 'react-reveal/Slide';
+import Sound from "react-sound";
 
 export default function AboutMe() {
 
     const [show, setShow] = useState(false);
+    const [spin, setSpin] = useState(false);
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+
+    const handleSpin = (e) => {
+        e.preventDefault();
+
+        if (spin === false) {
+            setSpin(true);
+        } else {
+            setSpin(false);
+        };
+    };
 
     return (
         <Container fluid>
@@ -69,7 +81,7 @@ export default function AboutMe() {
                                     <Row style={{ marginLeft: "-30px" }}>
                                         <Col>
                                             <Fade left>
-                                                <span className="contact-button"><span onClick={handleShow} className="contact-link"></span></span>
+                                                <span className="record-button"><span onClick={(e) => handleSpin(e)} className="record-link"></span></span>
                                             </Fade>
                                         </Col>
                                     </Row>
@@ -89,8 +101,16 @@ export default function AboutMe() {
                                 </Container>
                             </Col>
                             <Col>
-                                <div className='record'></div>
+                                {spin === false && (
+                                    <div className='record'></div>
+                                )}
+                                {spin === true && (
+                                    <div className='record-spin'></div>
+                                )}
                             </Col>
+                        </Row>
+                        <Row style={{ marginTop: "30px" }}>
+                            <iframe src="https://open.spotify.com/embed/track/6Q0LgI8oyye3lWsarz2AIG" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                         </Row>
                     </Container>
                 </Col>
