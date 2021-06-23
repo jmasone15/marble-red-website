@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -6,46 +6,31 @@ import Carousel from "react-bootstrap/Carousel";
 import Fade from "react-reveal/Fade";
 
 export default function Music() {
+
+    const [index, setIndex] = useState(0);
+
+    const handleSelect = (selectedIndex, e) => {
+        setIndex(selectedIndex);
+    };
+
     return (
         <Container>
-            <Row style={{ marginTop: "100px", marginBottom: "200px" }}>
+            <Row style={{ marginTop: "200px", marginBottom: "200px" }}>
                 <Col>
                     <Fade left>
-                        <Carousel>
-                            <Carousel.Item>
-                                <img
-                                    className="d-block w-100"
-                                    src="https://via.placeholder.com/800x400.png?text=Album+Number+1"
-                                    alt="Album #1"
-                                />
-                                <Carousel.Caption>
-                                    <h3>First Album Title</h3>
-                                    <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                                </Carousel.Caption>
+                        <Carousel activeIndex={index} onSelect={handleSelect} style={{ paddingBottom: "100px" }} controls={false}>
+                            <Carousel.Item interval={10000000}>
+                                <iframe src="https://open.spotify.com/embed/track/6Q0LgI8oyye3lWsarz2AIG" width="100%" height="600" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                             </Carousel.Item>
-                            <Carousel.Item>
-                                <img
-                                    className="d-block w-100"
-                                    src="https://via.placeholder.com/800x400.png?text=Album+Number+2"
-                                    alt="Album #2"
-                                />
-
-                                <Carousel.Caption>
-                                    <h3>Second Album Title</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                                </Carousel.Caption>
+                            <Carousel.Item interval={10000000}>
+                                <iframe src="https://open.spotify.com/embed/track/5UVK6Ey02ZZflXAUK8Jd0L" width="100%" height="600" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                             </Carousel.Item>
-                            <Carousel.Item>
+                            <Carousel.Item interval={10000000}>
                                 <img
                                     className="d-block w-100"
-                                    src="https://via.placeholder.com/800x400.png?text=Album+Number+3"
+                                    src="https://via.placeholder.com/800x420.png?text=Album+Number+3"
                                     alt="Album #3"
                                 />
-
-                                <Carousel.Caption>
-                                    <h3>Third Album Titlel</h3>
-                                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-                                </Carousel.Caption>
                             </Carousel.Item>
                         </Carousel>
                     </Fade>
