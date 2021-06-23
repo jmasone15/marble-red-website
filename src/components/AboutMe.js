@@ -66,7 +66,7 @@ export default function AboutMe() {
                                     <br />
                                     <Row>
                                         <Col>
-                                            <Button variant="outline-dark" size="lg" onClick={handleShow}>Contact Me</Button>
+                                            <span className="contact-button"><span onClick={handleShow} className="contact-link"></span></span>
                                         </Col>
                                     </Row>
                                     <Row style={{ marginTop: "150px" }}>

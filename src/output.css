@@ -493,5 +493,53 @@ to align it properly */
     transform: translatey(calc(var(--axis-y) * -3));
   }
 }
+.contact-button {
+  position: relative;
+  display: inline-flex;
+  width: 180px;
+  height: 55px;
+  margin: 0 15px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.contact-button .contact-link {
+  font-size: 19px;
+  letter-spacing: 1px;
+  transform-style: preserve-3d;
+  transform: translateZ(-25px);
+  transition: transform 0.25s;
+  font-family: "Montserrat", sans-serif;
+}
+
+.contact-button .contact-link:before,
+.contact-button .contact-link:after {
+  position: absolute;
+  content: "CONTACT";
+  height: 55px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid black;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.contact-button .contact-link:before {
+  color: #fff;
+  background: #000;
+  transform: rotateY(0deg) translateZ(25px);
+}
+
+.contact-button .contact-link:after {
+  color: #000;
+  content: "LETS CHAT";
+  transform: rotateX(90deg) translateZ(25px);
+}
+
+.contact-button .contact-link:hover {
+  transform: translateZ(-25px) rotateX(-90deg);
+}
 
 /*# sourceMappingURL=output.css.map */
