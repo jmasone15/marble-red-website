@@ -21,18 +21,13 @@ export default function AboutMe() {
     };
 
     return (
-        <Container fluid>
+        <Container>
             <Row style={{ marginBottom: "100px", marginTop: "150px" }}>
                 <Col>
-                    <Container fluid>
+                    <Container>
                         <Row>
                             <Col>
-                                <Container fluid>
-                                    <Row>
-                                        <Col>
-                                            <h1 className="about-head">A little about...</h1>
-                                        </Col>
-                                    </Row>
+                                <Container>
                                     <Row>
                                         <Col>
                                             <Fade top big cascade>
@@ -47,28 +42,30 @@ export default function AboutMe() {
                                             </Fade>
                                         </Col>
                                     </Row>
-                                    <Row style={{ marginTop: "170px", paddingBottom: "100px" }}>
+                                    {/* <Row>
                                         <Col>
-                                            <Slide top cascade>
-                                                <div className="about-card">
-                                                    <h5 className="about-text">blah blah blah blah blah blah blah blah blah blah</h5>
-                                                    <h5 className="about-text">blah blah blah blah blah blah blah blah blah blah</h5>
-                                                    <h5 className="about-text">blah blah blah blah blah blah blah blah blah blah</h5>
-                                                    <h5 className="about-text">blah blah blah blah blah blah blah blah blah blah</h5>
-                                                    <h5 className="about-text">blah blah blah blah blah blah blah blah blah blah</h5>
-                                                </div>
-                                            </Slide>
+                                            {spin === false && (
+                                                <div className='record'></div>
+                                            )}
+                                            {spin === true && (
+                                                <div className='record-spin'></div>
+                                            )}
                                         </Col>
-                                    </Row>
+                                    </Row> */}
                                 </Container>
                             </Col>
                             <Col>
-                                {spin === false && (
-                                    <div className='record'></div>
-                                )}
-                                {spin === true && (
-                                    <div className='record-spin'></div>
-                                )}
+                                <Col>
+                                    <Slide top cascade>
+                                        <div className="about-card">
+                                            <h5 className="about-text">blah blah blah blah blah blah blah blah blah blah</h5>
+                                            <h5 className="about-text">blah blah blah blah blah blah blah blah blah blah</h5>
+                                            <h5 className="about-text">blah blah blah blah blah blah blah blah blah blah</h5>
+                                            <h5 className="about-text">blah blah blah blah blah blah blah blah blah blah</h5>
+                                            <h5 className="about-text">blah blah blah blah blah blah blah blah blah blah</h5>
+                                        </div>
+                                    </Slide>
+                                </Col>
                             </Col>
                         </Row>
                     </Container>

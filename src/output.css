@@ -35,10 +35,11 @@ html {
 }
 
 .parallax-about {
-  background-image: url("./images/4003633.jpg");
+  background-color: grey;
   /* Set a specific height */
   min-height: 500px;
   /* Create the parallax scrolling effect */
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   padding-top: 0.1%;
@@ -156,8 +157,8 @@ html {
   position: relative;
   margin-left: -100px;
   margin-top: -100px;
-  width: 800px;
-  height: 800px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   background: linear-gradient(30deg, transparent 40%, rgba(42, 41, 40, 0.85) 40%) no-repeat 100% 0, linear-gradient(60deg, rgba(42, 41, 40, 0.85) 60%, transparent 60%) no-repeat 0 100%, repeating-radial-gradient(#2a2928, #2a2928 4px, #ada9a0 5px, #2a2928 6px);
   background-size: 50% 100%, 100% 50%, 100% 100%;
@@ -165,12 +166,12 @@ html {
 
 .record:after {
   position: absolute;
-  top: 39%;
-  left: 39%;
+  top: 50%;
+  left: 50%;
   margin: -35px;
   border: solid 1px #d9a388;
-  width: 250px;
-  height: 250px;
+  width: 68px;
+  height: 68px;
   border-radius: 50%;
   background-image: url("./images/69-692697_paige-face-circle-face-in-a-circle-hd.png");
   content: "";
@@ -188,7 +189,7 @@ html {
   background-size: 50% 100%, 100% 50%, 100% 100%;
   animation-name: record;
   animation-iteration-count: infinite;
-  animation-duration: 1s;
+  animation-duration: 5s;
   animation-timing-function: linear;
 }
 
@@ -217,6 +218,7 @@ html {
 .follow {
   font-family: "Cooper Black";
   font-size: 60px;
+  color: #FFBE0B;
 }
 
 .divider {
@@ -265,7 +267,7 @@ html {
   text-align: center;
   cursor: pointer;
   border-radius: 50%;
-  border: 5px solid #D8E2DC;
+  border: 5px solid #FFBE0B;
   float: left;
   transition: all 0.5s ease;
 }
@@ -273,7 +275,7 @@ html {
 /* Style the icons by setting its color and margin-top value to 20px 
 to align it properly */
 .wrapper ul li .fa {
-  color: #D8E2DC;
+  color: #FFBE0B;
   margin-top: 17px;
   transition: all 0.5s ease;
 }
@@ -571,12 +573,12 @@ to align it properly */
 }
 
 .about-card {
-  font-family: "Acme", sans-serif;
-  color: #555b6e;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #fff;
 }
 
 .about-text {
-  font-size: 28px;
+  font-size: 30px;
 }
 
 .record-button {
