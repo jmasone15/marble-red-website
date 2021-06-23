@@ -5,7 +5,8 @@ import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import Form from "react-bootstrap/Form";
-import image from "../images/marble-red-02.jpg";
+import Card from "react-bootstrap/Card";
+import image from "../images/marble-red-03-removebg-preview.png";
 
 export default function AboutMe() {
 
@@ -48,29 +49,56 @@ export default function AboutMe() {
             </Row>
             <Row style={{ marginBottom: "100px", marginTop: "100px" }}>
                 <Col>
-                    <Container>
+                    <Container fluid>
                         <Row>
                             <Col>
-                                <br /><br /><br /><br />
-
-                                <h6>A little about...</h6>
-                                <h1>Marble Red</h1>
-
-                                <br /><br />
-
-                                <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-                                <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-                                <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-                                <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-                                <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-
-                                <br /><br />
-                                <div style={{ textAlign: "center" }}>
-                                    <Button variant="outline-dark" size="lg" onClick={handleShow}>Contact Me</Button>
-                                </div>
+                                <Container>
+                                    <Row>
+                                        <Col>
+                                            <h1 style={{ fontSize: "35px" }}>A little about...</h1>
+                                        </Col>
+                                    </Row>
+                                    <Row>
+                                        <Col>
+                                            <h1 style={{ fontSize: "70px" }}>Marble Red</h1>
+                                        </Col>
+                                    </Row>
+                                    <br />
+                                    <Row>
+                                        <Col>
+                                            <Button variant="outline-dark" size="lg" onClick={handleShow}>Contact Me</Button>
+                                        </Col>
+                                    </Row>
+                                    <Row style={{ marginTop: "150px" }}>
+                                        <Col>
+                                            <Container>
+                                                <Row>
+                                                    <Col>
+                                                        <h3>Something</h3>
+                                                        <br />
+                                                        <p>blah blah blah blah blah</p>
+                                                        <p>blah blah blah blah blah</p>
+                                                        <p>blah blah blah blah blah</p>
+                                                        <p>blah blah blah blah blah</p>
+                                                        <p>blah blah blah blah blah</p>
+                                                    </Col>
+                                                    <Col style={{ textAlign: "right" }}>
+                                                        <h3>Something Else</h3>
+                                                        <br />
+                                                        <p>blah blah blah blah blah</p>
+                                                        <p>blah blah blah blah blah</p>
+                                                        <p>blah blah blah blah blah</p>
+                                                        <p>blah blah blah blah blah</p>
+                                                        <p>blah blah blah blah blah</p>
+                                                    </Col>
+                                                </Row>
+                                            </Container>
+                                        </Col>
+                                    </Row>
+                                </Container>
                             </Col>
-                            <Col>
-                                <img src={image} alt="Marble Red" style={{ height: "600px", width: "400px" }} />
+                            <Col style={{ marginTop: "-300px", marginRight: "-300px" }}>
+                                <img src={image} alt="Marble Red" style={{ height: "1000px", width: "800px" }} />
                             </Col>
                         </Row>
                     </Container>

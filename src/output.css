@@ -34,17 +34,7 @@ html {
 }
 
 .parallax-about {
-  /* The image used */
-  background-image: url("./images/_75745654_466377933.jpg");
-  /* Set a specific height */
-  min-height: 500px;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 0.1%;
-  padding-bottom: 0.1%;
+  background-color: #bcb8b1;
 }
 
 .op0 {
@@ -157,6 +147,10 @@ html {
 .follow {
   font-family: "Cooper Black";
   font-size: 60px;
+}
+
+.about-card {
+  background-color: rgba(153, 153, 153, 0.979);
 }
 
 .divider {
