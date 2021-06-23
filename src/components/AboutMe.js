@@ -5,6 +5,7 @@ import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import Form from "react-bootstrap/Form";
+import image from "../images/marble-red-02.jpg";
 
 export default function AboutMe() {
 
@@ -15,11 +16,6 @@ export default function AboutMe() {
 
     return (
         <Container>
-            <Row style={{ marginTop: "100px", marginBottom: "100px" }}>
-                <Col>
-                    <h1><u>About Me</u></h1>
-                </Col>
-            </Row>
             <Row>
                 <Col>
                     <Modal show={show} onHide={handleClose} size="lg" aria-labelledby="example-modal-sizes-title-lg">
@@ -50,21 +46,34 @@ export default function AboutMe() {
                     </Modal>
                 </Col>
             </Row>
-            <Row style={{ textAlign: "center", marginBottom: "100px" }}>
-                <Col style={{ backgroundColor: "white", marginRight: "100px" }}>
-                    <div>
-                        <h3>A little about Marble Red...</h3>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-                    </div>
-                </Col>
-                <Col style={{ backgroundColor: "white" }}>
-                    <h3>Image here</h3>
-                    <img src="https://via.placeholder.com/200" alt="Marble Red" />
-                </Col>
-            </Row>
-            <Row style={{ textAlign: "center", marginBottom: "100px" }}>
+            <Row style={{ marginBottom: "100px", marginTop: "100px" }}>
                 <Col>
-                    <Button variant="outline-dark" size="lg" onClick={handleShow}>Contact Me</Button>
+                    <Container>
+                        <Row>
+                            <Col>
+                                <br /><br /><br /><br />
+
+                                <h6>A little about...</h6>
+                                <h1>Marble Red</h1>
+
+                                <br /><br />
+
+                                <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+                                <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+                                <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+                                <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+                                <p>blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+
+                                <br /><br />
+                                <div style={{ textAlign: "center" }}>
+                                    <Button variant="outline-dark" size="lg" onClick={handleShow}>Contact Me</Button>
+                                </div>
+                            </Col>
+                            <Col>
+                                <img src={image} alt="Marble Red" style={{ height: "600px", width: "400px" }} />
+                            </Col>
+                        </Row>
+                    </Container>
                 </Col>
             </Row>
         </Container>
