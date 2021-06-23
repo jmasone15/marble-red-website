@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./components/Header";
 import TopBar from "./components/TopBar";
 import Music from "./components/Music";
@@ -10,14 +10,23 @@ import Col from "react-bootstrap/Col";
 import "./output.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Social from "./components/Social";
+import ContactModal from "./components/ContactModal";
 
 function App() {
+
+  const [show, setShow] = useState(false);
+
   return (
     <Container fluid className="parallax" style={{ padding: "0" }}>
       <Container>
         <Row style={{ textAlign: "center" }}>
           <Col>
-            <TopBar />
+            <TopBar setShow={setShow} />
+          </Col>
+        </Row>
+        <Row style={{ textAlign: "center" }}>
+          <Col>
+            <ContactModal show={show} setShow={setShow} />
           </Col>
         </Row>
         <Container fluid id="home">

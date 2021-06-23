@@ -4,7 +4,10 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-export default function TopBar() {
+export default function TopBar({ setShow }) {
+
+    const handleShow = () => setShow(true);
+
     return (
         <Navbar expand="xl" fixed="top" >
             <Navbar.Brand className="op0">Brand Test</Navbar.Brand>
@@ -35,7 +38,7 @@ export default function TopBar() {
                     <Row>
                         <Col>
                             <div>
-                                <h1 className="fourth-drop-text" style={{ display: "inline" }}><a href="#contact" style={{ color: "inherit", textDecoration: "none" }}>Contact</a></h1>
+                                <h1 className="fourth-drop-text" style={{ display: "inline" }}><span onClick={handleShow} style={{ color: "inherit", textDecoration: "none" }}>Contact</span></h1>
                             </div>
                         </Col>
                     </Row>

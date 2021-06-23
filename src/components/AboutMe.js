@@ -2,21 +2,13 @@ import React, { useState } from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import Button from "react-bootstrap/Button";
-import Modal from "react-bootstrap/Modal";
-import Form from "react-bootstrap/Form";
-import image from "../images/marble-red-03-removebg-preview.png";
 import Fade from "react-reveal/Fade";
 import Slide from 'react-reveal/Slide';
-import Sound from "react-sound";
+// import Sound from "react-sound";
 
 export default function AboutMe() {
 
-    const [show, setShow] = useState(false);
     const [spin, setSpin] = useState(false);
-
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
 
     const handleSpin = (e) => {
         e.preventDefault();
@@ -30,36 +22,6 @@ export default function AboutMe() {
 
     return (
         <Container fluid>
-            <Row>
-                <Col>
-                    <Modal show={show} onHide={handleClose} size="lg" aria-labelledby="example-modal-sizes-title-lg">
-                        <Modal.Header closeButton>
-                            <Modal.Title>Contact Form</Modal.Title>
-                        </Modal.Header>
-                        <Form>
-                            <Modal.Body>
-                                <Form.Group controlId="formBasicEmail">
-                                    <Form.Label>Email address</Form.Label>
-                                    <Form.Control type="email" placeholder="Enter email" />
-                                </Form.Group>
-
-                                <Form.Group controlId="formBasicPassword">
-                                    <Form.Label>Message</Form.Label>
-                                    <Form.Control as="textarea" placeholder="Send me a message :)" />
-                                </Form.Group>
-                            </Modal.Body>
-                            <Modal.Footer>
-                                <Button variant="secondary" onClick={handleClose}>
-                                    Close
-                                </Button>
-                                <Button variant="primary" onClick={handleClose}>
-                                    Submit
-                                </Button>
-                            </Modal.Footer>
-                        </Form>
-                    </Modal>
-                </Col>
-            </Row>
             <Row style={{ marginBottom: "100px", marginTop: "150px" }}>
                 <Col>
                     <Container fluid>
@@ -108,9 +70,6 @@ export default function AboutMe() {
                                     <div className='record-spin'></div>
                                 )}
                             </Col>
-                        </Row>
-                        <Row style={{ marginTop: "30px" }}>
-                            <iframe src="https://open.spotify.com/embed/track/6Q0LgI8oyye3lWsarz2AIG" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                         </Row>
                     </Container>
                 </Col>
