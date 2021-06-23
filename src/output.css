@@ -55,19 +55,19 @@ html {
 }
 
 .first-drop-text:hover {
-  color: #FB5607;
+  color: #c1121f;
 }
 
 .second-drop-text:hover {
-  color: #FB5607;
+  color: #c1121f;
 }
 
 .third-drop-text:hover {
-  color: #FB5607;
+  color: #c1121f;
 }
 
 .fourth-drop-text:hover {
-  color: #FB5607;
+  color: #c1121f;
 }
 
 .header-link {
@@ -159,7 +159,7 @@ html {
 }
 
 .divider {
-  background-color: rgba(246, 80, 80, 0.979);
+  background-color: #FB5607;
   padding-top: 300px;
 }
 
@@ -175,7 +175,7 @@ html {
 }
 
 .Footer {
-  background-color: rgba(246, 80, 80, 0.979);
+  background-color: #FB5607;
   color: white;
   padding-top: 50px;
 }

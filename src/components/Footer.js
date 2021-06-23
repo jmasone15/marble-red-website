@@ -8,7 +8,7 @@ export default function Footer() {
         <Container>
             <Row>
                 <Col style={{ textAlign: "center" }}>
-                    <p style={{ opacity: "0.5", fontSize: "13px" }}>blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+                    <p style={{ opacity: "0.5", fontSize: "13px" }}>Terms of Use | Privacy Agreement | Marble Red Records LLC | Anti-Aliasing Agent</p>
                     <p style={{ opacity: "0.5" }}>&copy; {new Date().getFullYear()} Copyright: <a href="https://github.com/jmasone15" style={{ color: "white" }}> Jordan Masone </a></p>
                 </Col>
             </Row>
