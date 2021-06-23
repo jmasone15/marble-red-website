@@ -5,8 +5,11 @@ import Col from "react-bootstrap/Col";
 
 export default function Social() {
     return (
-        <Container style={{ paddingBottom: "200px", paddingTop: "100px" }}>
+        <Container style={{ paddingBottom: "150px", paddingTop: "50px" }}>
             <Row style={{ textAlign: "center" }}>
+                <Col style={{ marginRight: "-150px" }}>
+                    <h1 className="follow">Follow</h1>
+                </Col>
                 <Col>
                     <div className="wrapper">
                         <ul>
