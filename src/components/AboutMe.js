@@ -5,8 +5,9 @@ import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import Form from "react-bootstrap/Form";
-import Card from "react-bootstrap/Card";
 import image from "../images/marble-red-03-removebg-preview.png";
+import Fade from "react-reveal/Fade";
+import Slide from 'react-reveal/Slide';
 
 export default function AboutMe() {
 
@@ -60,29 +61,37 @@ export default function AboutMe() {
                                     </Row>
                                     <Row style={{ marginLeft: "-100px" }}>
                                         <Col>
-                                            <h1 className="about-name">Marble Red</h1>
+                                            <Fade top big cascade>
+                                                <h1 className="about-name">Marble Red</h1>
+                                            </Fade>
                                         </Col>
                                     </Row>
                                     <Row style={{ marginLeft: "-120px" }}>
                                         <Col>
-                                            <span className="contact-button"><span onClick={handleShow} className="contact-link"></span></span>
+                                            <Fade left>
+                                                <span className="contact-button"><span onClick={handleShow} className="contact-link"></span></span>
+                                            </Fade>
                                         </Col>
                                     </Row>
                                     <Row style={{ marginTop: "150px", marginLeft: "-120px" }}>
                                         <Col>
-                                            <div className="about-card">
-                                                <h5 className="about-text">blah blah blah blah blah blah blah blah blah blah</h5>
-                                                <h5 className="about-text">blah blah blah blah blah blah blah blah blah blah</h5>
-                                                <h5 className="about-text">blah blah blah blah blah blah blah blah blah blah</h5>
-                                                <h5 className="about-text">blah blah blah blah blah blah blah blah blah blah</h5>
-                                                <h5 className="about-text">blah blah blah blah blah blah blah blah blah blah</h5>
-                                            </div>
+                                            <Slide top cascade>
+                                                <div className="about-card">
+                                                    <h5 className="about-text">blah blah blah blah blah blah blah blah blah blah</h5>
+                                                    <h5 className="about-text">blah blah blah blah blah blah blah blah blah blah</h5>
+                                                    <h5 className="about-text">blah blah blah blah blah blah blah blah blah blah</h5>
+                                                    <h5 className="about-text">blah blah blah blah blah blah blah blah blah blah</h5>
+                                                    <h5 className="about-text">blah blah blah blah blah blah blah blah blah blah</h5>
+                                                </div>
+                                            </Slide>
                                         </Col>
                                     </Row>
                                 </Container>
                             </Col>
                             <Col style={{ marginTop: "-300px", marginRight: "-400px" }}>
-                                <img src={image} alt="Marble Red" style={{ height: "1000px", width: "800px" }} />
+                                <Fade right>
+                                    <img src={image} alt="Marble Red" style={{ height: "1000px", width: "800px" }} />
+                                </Fade>
                             </Col>
                         </Row>
                     </Container>
