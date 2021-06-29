@@ -1,71 +1,67 @@
-import React, { useState } from "react";
+import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Fade from "react-reveal/Fade";
-import Slide from 'react-reveal/Slide';
-// import Sound from "react-sound";
+import Slide from "react-reveal/Slide";
 
 export default function AboutMe() {
 
-    const [spin, setSpin] = useState(false);
-
-    const handleSpin = (e) => {
-        e.preventDefault();
-
-        if (spin === false) {
-            setSpin(true);
-        } else {
-            setSpin(false);
-        };
-    };
-
     return (
-        <Container>
-            <Row style={{ marginBottom: "100px", marginTop: "150px" }}>
+        <Container fluid>
+            <Row style={{ marginBottom: "100px", marginTop: "200px" }}>
                 <Col>
-                    <Container>
+                    <Container fluid>
                         <Row>
                             <Col>
-                                <Container>
-                                    <Row>
-                                        <Col>
-                                            <Fade top big cascade>
-                                                <h1 className="about-name">Marble Red</h1>
-                                            </Fade>
-                                        </Col>
-                                    </Row>
-                                    <Row style={{ marginLeft: "-30px" }}>
-                                        <Col>
-                                            <Fade left>
-                                                <span className="record-button"><span onClick={(e) => handleSpin(e)} className="record-link"></span></span>
-                                            </Fade>
-                                        </Col>
-                                    </Row>
-                                    {/* <Row>
-                                        <Col>
-                                            {spin === false && (
-                                                <div className='record'></div>
-                                            )}
-                                            {spin === true && (
-                                                <div className='record-spin'></div>
-                                            )}
-                                        </Col>
-                                    </Row> */}
-                                </Container>
+                                <Fade top big cascade>
+                                    <h1 className="about-name">Marble Red</h1>
+                                </Fade>
                             </Col>
+                        </Row>
+                        <Row>
+                            <Col style={{ marginTop: "30px" }}>
+                                <Slide top cascade>
+                                    <div className="about-card">
+                                        <p className="about-text">blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
+                                    </div>
+                                </Slide>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col style={{ textAlign: "center", marginTop: "30px" }}>
+                                <Fade left>
+                                    <span className="record-button"><span className="record-link"></span></span>
+                                </Fade>
+                            </Col>
+                        </Row>
+                    </Container>
+                </Col>
+                <Col>
+                    <Container fluid>
+                        <Row>
+                            <Col style={{ marginRight: "20px", marginBottom: "20px" }}>
+                                <div className="image-container">
+                                    <div
+                                        className="image-container__image">
+                                    </div>
+                                </div>
+                            </Col>
+                            <Col style={{ marginBottom: "20px" }}>
+                                <div className="image-container">
+                                    <div
+                                        className="image-container__image">
+                                    </div>
+                                </div>
+                            </Col>
+                        </Row>
+                        <Row>
                             <Col>
-                                <Col>
-                                    <Slide top cascade>
-                                        <div className="about-card">
-                                            <h5 className="about-text">blah blah blah blah blah blah blah blah blah blah</h5>
-                                            <h5 className="about-text">blah blah blah blah blah blah blah blah blah blah</h5>
-                                            <h5 className="about-text">blah blah blah blah blah blah blah blah blah blah</h5>
-                                            <h5 className="about-text">blah blah blah blah blah blah blah blah blah blah</h5>
-                                            <h5 className="about-text">blah blah blah blah blah blah blah blah blah blah</h5>
-                                        </div>
-                                    </Slide>
-                                </Col>
+                                <div className="image-container">
+                                    <div
+                                        className="image-container__image">
+                                    </div>
+                                </div>
                             </Col>
                         </Row>
                     </Container>

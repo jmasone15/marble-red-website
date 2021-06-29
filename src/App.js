@@ -17,8 +17,8 @@ function App() {
   const [show, setShow] = useState(false);
 
   return (
-    <Container fluid className="parallax" style={{ padding: "0" }}>
-      <Container>
+    <Container className="parallax" fluid style={{ padding: "0" }}>
+      < Container >
         <Row style={{ textAlign: "center" }}>
           <Col>
             <TopBar setShow={setShow} />
@@ -46,7 +46,7 @@ function App() {
             </Col>
           </Row>
         </Container>
-      </Container>
+      </Container >
       <Container fluid className="Social" id="social">
         <Row>
           <Col>

@@ -23,34 +23,34 @@ html {
     padding-bottom: 0.1%;
 }
 
-.parallax-music {
-  /* The image used */
-  background-image: url("./images/thumb16.jpg");
+// .parallax-music {
+//   /* The image used */
+//   background-image: url("./images/thumb16.jpg");
 
-  /* Set a specific height */
-  min-height: 500px;
+//   /* Set a specific height */
+//   min-height: 500px;
 
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-    padding-top: 0.1%;
-    padding-bottom: 0.1%;
-}
+//   /* Create the parallax scrolling effect */
+//   background-attachment: fixed;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//     padding-top: 0.1%;
+//     padding-bottom: 0.1%;
+// }
 
-.parallax-about {
-  background-color: grey;
-    /* Set a specific height */
-  min-height: 500px;
+// .parallax-about {
+//   background-image: url("https://static.boredpanda.com/blog/wp-content/uploads/2016/06/1970-stock-photos-robert-armstrong-14-575ea42b5e336__880.jpg");
+//     /* Set a specific height */
+//   min-height: 500px;
 
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-    padding-top: 0.1%;
-    padding-bottom: 0.1%;
-}
+//   /* Create the parallax scrolling effect */
+//   background-attachment: fixed;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//     padding-top: 0.1%;
+//     padding-bottom: 0.1%;
+// }
 
 .op0 {
     opacity: 0;
@@ -589,7 +589,7 @@ font-family: "Cooper Black";
 .record-button .record-link:before,
 .record-button .record-link:after{
   position: absolute;
-  content: "PLAY ME";
+  content: "BUTTON";
   height: 55px;
   width: 180px;
   display: flex;
@@ -606,9 +606,76 @@ font-family: "Cooper Black";
 }
 .record-button .record-link:after{
   color: #d00000;
-  content: "FOR YOU";
+  content: "DOES SOMETHING";
   transform: rotateX(90deg) translateZ(25px);
 }
 .record-button .record-link:hover{
   transform: translateZ(-25px) rotateX(-90deg);
+}
+
+.image-container{
+  display:flex;
+  
+  justify-content:center;
+  height:100%;
+  width:100%;
+  
+  overflow:hidden;
+
+  &__image{
+    position:relative;
+    display:flex;
+    
+    flex-direction:column;
+    justify-content:center;
+    width:250px;
+    height:250px;
+    
+    border-radius:50%;
+    background-image:url('https://silviadiaconescu.com/work/landscape/pb-2.jpg');
+    background-size:cover;
+    transition: ease-in-out .3s;
+    
+    z-index:2;
+    &:before{
+      content: ' ';
+      position:absolute;
+      
+      width:100%;
+      height:100%;
+      top:0;
+      bottom:0;
+      left:0;
+      margin:auto;
+      
+      background: inherit;
+      background-position:bottom;
+      filter:blur(40px) saturate(0%);
+      transform:scaleX(0.4);
+      transition:ease-in-out .4s;
+      border-radius:120px;
+      transform-origin:right;
+      opacity:0;
+      
+      z-index:-1;
+    }
+    &:hover{
+      border-radius:0;
+      width:450px;
+      height:310px;
+      
+      box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+      &:before{
+        width:100%;
+        
+        opacity: 0;
+        transform:scale(2.8) translate3d(-18%, 0px, 0px);
+      }
+      
+      .container__info{
+        transform:translate3d(-60%,0px,0px);
+        opacity:1;
+      }
+    }
+  }
 }
