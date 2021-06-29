@@ -96,7 +96,7 @@ html {
 }
 .left-bar:after {
   content: "";
-  background-color: white;
+  background-color: #FFBE0B;
   width: 40px;
   height: 10px;
   float: right;
@@ -118,7 +118,7 @@ html {
 }
 .right-bar:after {
   content: "";
-  background-color: white;
+  background-color: #FFBE0B;
   width: 40px;
   height: 10px;
   float: right;
