@@ -619,6 +619,7 @@ to align it properly */
   width: 250px;
   height: 250px;
   border-radius: 50%;
+  border: solid 5px white;
   background-image: url("https://silviadiaconescu.com/work/landscape/pb-2.jpg");
   background-size: cover;
   transition: ease-in-out 0.3s;
@@ -645,6 +646,7 @@ to align it properly */
 }
 .image-container__image:hover {
   border-radius: 0;
+  border: solid 5px #FB5607;
   width: 450px;
   height: 310px;
   box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
@@ -657,6 +659,113 @@ to align it properly */
 .image-container__image:hover .container__info {
   transform: translate3d(-60%, 0px, 0px);
   opacity: 1;
+}
+
+.screen {
+  position: relative;
+  background: #e6aa3c;
+}
+
+.screen:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  z-index: -1;
+}
+
+.screen-body {
+  display: flex;
+}
+
+.screen-body-item {
+  flex: 1;
+  padding: 50px;
+}
+
+.screen-body-item.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-title {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: #FB5607;
+  font-size: 40px;
+  border-bottom: #FB5607 2px solid;
+}
+
+.app-contact {
+  margin-top: auto;
+  font-size: 17px;
+  color: #ddd;
+}
+
+.app-form-group {
+  margin-bottom: 15px;
+}
+
+.app-form-group.message {
+  margin-top: 40px;
+}
+
+.app-form-group.buttons {
+  margin-bottom: 0;
+  text-align: right;
+}
+
+.app-form-control {
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #666;
+  color: #ddd;
+  font-size: 18px;
+  text-transform: uppercase;
+  outline: none;
+  transition: border-color 0.2s;
+  -webkit-transition-property: transform;
+  /* Safari */
+  -webkit-transition-duration: 0.2s;
+  /* Safari */
+  transition-property: transform;
+  transition-duration: 0.2s;
+}
+
+.app-form-control::placeholder {
+  color: #d1d0d0;
+}
+
+.app-form-control:focus {
+  border-bottom-color: #FB5607;
+  color: #FB5607;
+  transform: scale(1.2);
+}
+
+.app-form-button {
+  background: none;
+  border: none;
+  color: #FB5607;
+  font-size: 20px;
+  cursor: pointer;
+  outline: none;
+  -webkit-transition-property: transform;
+  /* Safari */
+  -webkit-transition-duration: 0.2s;
+  /* Safari */
+  transition-property: transform;
+  transition-duration: 0.2s;
+}
+
+.app-form-button:hover {
+  color: #c1121f;
+  transform: scale(1.2);
 }
 
 /*# sourceMappingURL=output.css.map */
