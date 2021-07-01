@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/marble-red-website/static/css/main.6171bd95.chunk.css",
-    "main.js": "/marble-red-website/static/js/main.9ab2def0.chunk.js",
-    "main.js.map": "/marble-red-website/static/js/main.9ab2def0.chunk.js.map",
+    "main.css": "/marble-red-website/static/css/main.86b86bd0.chunk.css",
+    "main.js": "/marble-red-website/static/js/main.2167804b.chunk.js",
+    "main.js.map": "/marble-red-website/static/js/main.2167804b.chunk.js.map",
     "runtime-main.js": "/marble-red-website/static/js/runtime-main.c1a15119.js",
     "runtime-main.js.map": "/marble-red-website/static/js/runtime-main.c1a15119.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/marble-red-website/static/css/2.4c97ca4f.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.4a2b22a8.chunk.js.map": "/marble-red-website/static/js/2.4a2b22a8.chunk.js.map",
     "index.html": "/marble-red-website/index.html",
     "static/css/2.4c97ca4f.chunk.css.map": "/marble-red-website/static/css/2.4c97ca4f.chunk.css.map",
-    "static/css/main.6171bd95.chunk.css.map": "/marble-red-website/static/css/main.6171bd95.chunk.css.map",
+    "static/css/main.86b86bd0.chunk.css.map": "/marble-red-website/static/css/main.86b86bd0.chunk.css.map",
     "static/js/2.4a2b22a8.chunk.js.LICENSE.txt": "/marble-red-website/static/js/2.4a2b22a8.chunk.js.LICENSE.txt",
     "static/media/output.css": "/marble-red-website/static/media/marble-red-01.c445d2a9.jpg"
   },
@@ -18,7 +18,7 @@
     "static/js/runtime-main.c1a15119.js",
     "static/css/2.4c97ca4f.chunk.css",
     "static/js/2.4a2b22a8.chunk.js",
-    "static/css/main.6171bd95.chunk.css",
-    "static/js/main.9ab2def0.chunk.js"
+    "static/css/main.86b86bd0.chunk.css",
+    "static/js/main.2167804b.chunk.js"
   ]
 }
