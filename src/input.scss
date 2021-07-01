@@ -138,6 +138,17 @@ html {
     font-family: "Cooper Black";
 }
 
+@media only screen and (max-width: 600px) {
+  .first-drop-text, .second-drop-text, .third-drop-text, .fourth-drop-text {
+    font-size: 30px;
+  }
+}
+@media only screen and (max-width: 768px) and (min-width: 600px) {
+  .first-drop-text, .second-drop-text, .third-drop-text, .fourth-drop-text {
+    font-size: 35px;
+  }
+}
+
 // Social Classes
 
 .follow {
@@ -251,11 +262,9 @@ html {
 
 :root {
  --color-background: #31037D;
- 
  --axis-x: 1px;
  --axis-y: 1rem;
  --delay: 10;
- 
  --color-black: #000;
  --color-pink: #FF006E;
  --color-orange: #FB5607;
@@ -264,7 +273,6 @@ html {
  --color-blue: #44A3F7;
  --color-green: #5ACB3C;
  --color-yellow: #FFBE0B;
- 
  --color-foreground: var(--color-pink);
  --font-name: Righteous;
 }
@@ -290,15 +298,12 @@ font-family: "Cooper Black";
   counter-increment: rainbow; 
   font-size: 6rem;
   color: var(--text-color);
-
   text-shadow:
    -1px -1px 0 var(--color-black),  
     1px -1px 0 var(--color-black),
     -1px 1px 0 var(--color-black),
      1px 1px 0 var(--color-black),
-   
-     4px 4px 0 rgba(0, 0, 0, .2);
-  
+     4px 4px 0 rgba(0, 0, 0, .2); 
   animation: rainbow 5s ease-in-out infinite;
   
   @for $i from 1 through 7 {
@@ -379,7 +384,9 @@ font-family: "Cooper Black";
   transform: rotateY(0deg) translateZ(25px);
 }
 .record-button .record-link:after{
-  color: #d00000;
+  color: #fff;
+  background: #d00000;
+  border: 5px solid #d00000;
   content: "LETS CHAT";
   transform: rotateX(90deg) translateZ(25px);
 }
@@ -431,25 +438,6 @@ font-family: "Cooper Black";
       opacity:0;
       
       z-index:-1;
-    }
-    &:hover{
-      border-radius:0;
-      border: solid 5px #FB5607;
-      width:450px;
-      height:310px;
-      
-      box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
-      &:before{
-        width:100%;
-        
-        opacity: 0;
-        transform:scale(2.8) translate3d(-18%, 0px, 0px);
-      }
-      
-      .container__info{
-        transform:translate3d(-60%,0px,0px);
-        opacity:1;
-      }
     }
   }
 }

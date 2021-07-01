@@ -4,13 +4,13 @@ import TopBar from "./components/TopBar";
 import Music from "./components/Music";
 import AboutMe from "./components/AboutMe";
 import Footer from "./components/Footer";
+import Social from "./components/Social";
+import ContactModal from "./components/ContactModal";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "./output.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Social from "./components/Social";
-import ContactModal from "./components/ContactModal";
 
 function App() {
 
