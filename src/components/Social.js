@@ -7,8 +7,8 @@ import Fade from "react-reveal/Fade";
 export default function Social() {
     return (
         <Container style={{ paddingBottom: "150px", paddingTop: "50px" }}>
-            <Row style={{ textAlign: "center" }}>
-                <Col style={{ marginRight: "-150px" }}>
+            <Row className="ta">
+                <Col className="follow">
                     <Fade top>
                         <h1 className="follow">Follow</h1>
                     </Fade>

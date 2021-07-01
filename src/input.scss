@@ -30,7 +30,6 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 .arrow-icon {
   height: 2.8em;
   width: 2.8em;
@@ -40,7 +39,6 @@ html {
   cursor: pointer;
   border-radius: 4px;
 }
-
 .left-bar {
   position: absolute;
   background-color: transparent;
@@ -62,7 +60,6 @@ html {
     z-index: -1;
   }
 }
-
 .right-bar {
   position: absolute;
   background-color: transparent;
@@ -85,9 +82,33 @@ html {
   }
 }
 
-.Music {
-  background-color: rgba(153, 153, 153, 0.979);
-  padding-top: 100px;
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 300px;
+  text-align: center;
+}
+@media only screen and (max-width: 705px) {
+  .header-container {
+    margin-top: 250px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .header-container {
+    margin-left: -25px;
+  }
+}
+
+.arrow-row {
+  margin-bottom: 300px;
+  margin-top: 450px;
+}
+@media only screen and (max-width: 989px) {
+  .arrow-row {
+    margin-top: 200px;
+    margin-bottom: 350px;
+  }
 }
 
 .Social {
@@ -95,7 +116,6 @@ html {
   color: white;
   padding-top: 100px;
 }
-
 .Footer {
   background-color: #FB5607;
   color: white;
@@ -155,17 +175,21 @@ html {
   font-family: "Cooper Black";
   font-size: 60px;
   color: #FFBE0B;
+  text-align: center;
+}
+@media only screen and (max-width: 1000px) {
+  .follow {
+    display: none;
+  }
 }
 .divider {
   background-color: #FB5607;
   padding-top: 300px;
 }
 .wrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 550px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 .wrapper ul {
   list-style: none;
@@ -175,7 +199,6 @@ html {
   height: 75px;
   line-height: 75px;
   margin: 0 10px;
-  text-align: center;
   cursor: pointer;
   border-radius: 50%;
   border: 5px solid #FFBE0B;
@@ -184,7 +207,6 @@ html {
 }
 .wrapper ul li .fa {
   color: #FFBE0B;
-  margin-top: 17px;
   transition: all 0.5s ease;
 }
 .wrapper ul li:hover.facebook {
@@ -244,8 +266,6 @@ html {
       margin-left: 60px;
   }
 }
-
-
 @media screen and (max-width: 340px){
   .wrapper {
       width: 150px;
@@ -277,22 +297,11 @@ html {
  --font-name: Righteous;
 }
 .header-wrapper {
- display: flex;
- align-items: center;
- justify-content: center;
- text-align: center;
-font-family: "Cooper Black";
+  font-family: "Cooper Black";
 }
 #{$root} {
  counter-reset: rainbow;
- position: relative;
- display: block;
- 
  list-style: none;
- 
- padding: 0;
- margin: 0;
- 
  &__layer {
   --text-color: var(--color-foreground);
   counter-increment: rainbow; 
@@ -305,19 +314,16 @@ font-family: "Cooper Black";
      1px 1px 0 var(--color-black),
      4px 4px 0 rgba(0, 0, 0, .2); 
   animation: rainbow 5s ease-in-out infinite;
-  
   @for $i from 1 through 7 {
    &:nth-child(#{$i}) {
     animation-delay: calc( #{$i} / var(--delay) * 1.5s);
     z-index: #{$i * 10};
    }
   }
-  
   &:not(:first-child) {
    position: absolute;
    top: 0;
   }
-
   &--pink  { --text-color: var(--color-pink)}
   &--orange { --text-color: var(--color-orange)}
   &--red    { --text-color: var(--color-red)}

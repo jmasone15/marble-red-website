@@ -81,11 +81,35 @@ html {
   z-index: -1;
 }
 
-.Music {
-  background-color: rgba(153, 153, 153, 0.979);
-  padding-top: 100px;
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 300px;
+  text-align: center;
 }
 
+@media only screen and (max-width: 705px) {
+  .header-container {
+    margin-top: 250px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .header-container {
+    margin-left: -25px;
+  }
+}
+.arrow-row {
+  margin-bottom: 300px;
+  margin-top: 450px;
+}
+
+@media only screen and (max-width: 989px) {
+  .arrow-row {
+    margin-top: 200px;
+    margin-bottom: 350px;
+  }
+}
 .Social {
   background-color: #FB5607;
   color: white;
@@ -152,19 +176,23 @@ html {
   font-family: "Cooper Black";
   font-size: 60px;
   color: #FFBE0B;
+  text-align: center;
 }
 
+@media only screen and (max-width: 1000px) {
+  .follow {
+    display: none;
+  }
+}
 .divider {
   background-color: #FB5607;
   padding-top: 300px;
 }
 
 .wrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 550px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .wrapper ul {
@@ -176,7 +204,6 @@ html {
   height: 75px;
   line-height: 75px;
   margin: 0 10px;
-  text-align: center;
   cursor: pointer;
   border-radius: 50%;
   border: 5px solid #FFBE0B;
@@ -186,7 +213,6 @@ html {
 
 .wrapper ul li .fa {
   color: #FFBE0B;
-  margin-top: 17px;
   transition: all 0.5s ease;
 }
 
@@ -289,20 +315,12 @@ html {
 }
 
 .header-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
   font-family: "Cooper Black";
 }
 
 .c-rainbow {
   counter-reset: rainbow;
-  position: relative;
-  display: block;
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
 .c-rainbow__layer {
   --text-color: var(--color-foreground);
