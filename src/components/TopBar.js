@@ -17,28 +17,28 @@ export default function TopBar({ setShow }) {
                     <Row>
                         <Col>
                             <div>
-                                <h1 className="first-drop-text" style={{ display: "inline" }}><a href="#" style={{ color: "inherit", textDecoration: "none" }}>Home</a></h1>
+                                <h1 className="first-drop-text"><a href="#" style={{ color: "inherit", textDecoration: "none" }}>Home</a></h1>
                             </div>
                         </Col>
                     </Row>
                     <Row>
                         <Col>
                             <div>
-                                <h1 className="second-drop-text" style={{ display: "inline" }}><a href="#music" style={{ color: "inherit", textDecoration: "none" }}>Music</a></h1>
+                                <h1 className="second-drop-text"><a href="#music" style={{ color: "inherit", textDecoration: "none" }}>Music</a></h1>
                             </div>
                         </Col>
                     </Row>
                     <Row>
                         <Col>
                             <div>
-                                <h1 className="third-drop-text" style={{ display: "inline" }}><a href="#about" style={{ color: "inherit", textDecoration: "none" }}>About</a></h1>
+                                <h1 className="third-drop-text"><a href="#about" style={{ color: "inherit", textDecoration: "none" }}>About</a></h1>
                             </div>
                         </Col>
                     </Row>
                     <Row>
                         <Col>
                             <div>
-                                <h1 className="fourth-drop-text" style={{ display: "inline" }}><span onClick={handleShow} style={{ color: "inherit", textDecoration: "none" }}>Contact</span></h1>
+                                <h1 className="fourth-drop-text"><span onClick={handleShow} style={{ color: "inherit", textDecoration: "none" }}>Contact</span></h1>
                             </div>
                         </Col>
                     </Row>

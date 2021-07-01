@@ -6,71 +6,25 @@ html {
   scroll-behavior: smooth;
 }
 
-.parallax {
-  /* The image used */
-  background-image: url("./images/marble-red-01.jpg");
-  /* Set a specific height */
-  min-height: 500px;
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 0.1%;
-  padding-bottom: 0.1%;
-}
-
 .op0 {
   opacity: 0;
+}
+
+.ta {
+  text-align: center;
 }
 
 .trans-back {
   background-color: transparent;
 }
 
-.first-drop-text:hover {
-  color: #c1121f;
-}
-
-.second-drop-text:hover {
-  color: #c1121f;
-}
-
-.third-drop-text:hover {
-  color: #c1121f;
-}
-
-.fourth-drop-text:hover {
-  color: #c1121f;
-}
-
-.header-link {
-  color: inherit;
-  text-decoration: none;
-}
-
-.first-drop-text {
-  cursor: pointer;
-  color: #FFBE0B;
-  font-family: "Cooper Black";
-}
-
-.second-drop-text {
-  cursor: pointer;
-  color: #FFBE0B;
-  font-family: "Cooper Black";
-}
-
-.third-drop-text {
-  cursor: pointer;
-  color: #FFBE0B;
-  font-family: "Cooper Black";
-}
-
-.fourth-drop-text {
-  cursor: pointer;
-  color: #FFBE0B;
-  font-family: "Cooper Black";
+.parallax {
+  background-image: url("./images/marble-red-01.jpg");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .arrow-icon {
@@ -127,79 +81,6 @@ html {
   z-index: -1;
 }
 
-.record {
-  position: relative;
-  margin-left: -100px;
-  margin-top: -100px;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background: linear-gradient(30deg, transparent 40%, rgba(42, 41, 40, 0.85) 40%) no-repeat 100% 0, linear-gradient(60deg, rgba(42, 41, 40, 0.85) 60%, transparent 60%) no-repeat 0 100%, repeating-radial-gradient(#2a2928, #2a2928 4px, #ada9a0 5px, #2a2928 6px);
-  background-size: 50% 100%, 100% 50%, 100% 100%;
-}
-
-.record:after {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin: -35px;
-  border: solid 1px #d9a388;
-  width: 68px;
-  height: 68px;
-  border-radius: 50%;
-  background-image: url("./images/69-692697_paige-face-circle-face-in-a-circle-hd.png");
-  content: "";
-  background-position: center;
-}
-
-.record-spin {
-  position: relative;
-  margin-left: -100px;
-  margin-top: -100px;
-  width: 800px;
-  height: 800px;
-  border-radius: 50%;
-  background: linear-gradient(30deg, transparent 40%, rgba(42, 41, 40, 0.85) 40%) no-repeat 100% 0, linear-gradient(60deg, rgba(42, 41, 40, 0.85) 60%, transparent 60%) no-repeat 0 100%, repeating-radial-gradient(#2a2928, #2a2928 4px, #ada9a0 5px, #2a2928 6px);
-  background-size: 50% 100%, 100% 50%, 100% 100%;
-  animation-name: record;
-  animation-iteration-count: infinite;
-  animation-duration: 5s;
-  animation-timing-function: linear;
-}
-
-.record-spin:after {
-  position: absolute;
-  top: 39%;
-  left: 39%;
-  margin: -35px;
-  border: solid 1px #d9a388;
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  background-image: url("./images/69-692697_paige-face-circle-face-in-a-circle-hd.png");
-  content: "";
-  background-position: center;
-}
-
-@keyframes record {
-  from {
-    transform: rotate(0);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-.follow {
-  font-family: "Cooper Black";
-  font-size: 60px;
-  color: #FFBE0B;
-}
-
-.divider {
-  background-color: #FB5607;
-  padding-top: 300px;
-}
-
 .Music {
   background-color: rgba(153, 153, 153, 0.979);
   padding-top: 100px;
@@ -217,6 +98,57 @@ html {
   padding-top: 50px;
 }
 
+.first-drop-text:hover {
+  color: #c1121f;
+}
+
+.second-drop-text:hover {
+  color: #c1121f;
+}
+
+.third-drop-text:hover {
+  color: #c1121f;
+}
+
+.fourth-drop-text:hover {
+  color: #c1121f;
+}
+
+.first-drop-text {
+  cursor: pointer;
+  color: #FFBE0B;
+  font-family: "Cooper Black";
+}
+
+.second-drop-text {
+  cursor: pointer;
+  color: #FFBE0B;
+  font-family: "Cooper Black";
+}
+
+.third-drop-text {
+  cursor: pointer;
+  color: #FFBE0B;
+  font-family: "Cooper Black";
+}
+
+.fourth-drop-text {
+  cursor: pointer;
+  color: #FFBE0B;
+  font-family: "Cooper Black";
+}
+
+.follow {
+  font-family: "Cooper Black";
+  font-size: 60px;
+  color: #FFBE0B;
+}
+
+.divider {
+  background-color: #FB5607;
+  padding-top: 300px;
+}
+
 .wrapper {
   position: absolute;
   top: 50%;
@@ -225,14 +157,10 @@ html {
   width: 550px;
 }
 
-/* Style the Un-order list by setting its list-style to none */
 .wrapper ul {
   list-style: none;
 }
 
-/* Style the list items inside the UL list, by setting its width, height and line-height 
-  and float them to left and set its border and border-radius.
- */
 .wrapper ul li {
   width: 75px;
   height: 75px;
@@ -246,17 +174,12 @@ html {
   transition: all 0.5s ease;
 }
 
-/* Style the icons by setting its color and margin-top value to 20px 
-to align it properly */
 .wrapper ul li .fa {
   color: #FFBE0B;
   margin-top: 17px;
   transition: all 0.5s ease;
 }
 
-/* Now target the specific li classes for styling and use box-shadow effect to border and text-shadow effect
-  to icons for glowing effect and use transition property for smooth transition effect. */
-/*facebook*/
 .wrapper ul li:hover.facebook {
   border: 5px solid #00aced;
   box-shadow: 0 0 15px #00aced;
@@ -268,7 +191,6 @@ to align it properly */
   transition: all 0.5s ease;
 }
 
-/*apple*/
 .wrapper ul li:hover.apple {
   border: 5px solid #a4c0ca;
   box-shadow: 0 0 15px #a4c0ca;
@@ -280,7 +202,6 @@ to align it properly */
   transition: all 0.5s ease;
 }
 
-/* instagram */
 .wrapper ul li:hover.instagram {
   border: 5px solid #f540bc;
   box-shadow: 0 0 15px #fff;
@@ -292,7 +213,6 @@ to align it properly */
   transition: all 0.5s ease;
 }
 
-/* twitch */
 .wrapper ul li:hover.twitch {
   border: 5px solid #bc1fd8;
   box-shadow: 0 0 15px #fff;
@@ -304,7 +224,6 @@ to align it properly */
   transition: all 0.5s ease;
 }
 
-/* spotify */
 .wrapper ul li:hover.spotify {
   border: 5px solid #4dc247;
   box-shadow: 0 0 15px #fff;
@@ -316,95 +235,6 @@ to align it properly */
   transition: all 0.5s ease;
 }
 
-.scroll {
-  margin-left: 550px;
-  margin-top: -100px;
-}
-
-.scrolldown {
-  --color: #FFBE0B;
-  --sizeX: 30px;
-  --sizeY: 50px;
-  position: relative;
-  width: var(--sizeX);
-  height: var(--sizeY);
-  border: calc(var(--sizeX) / 10) solid var(--color);
-  border-radius: 50px;
-  box-sizing: border-box;
-}
-
-.scrolldown::before {
-  content: "";
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  width: 6px;
-  height: 6px;
-  margin-left: -3px;
-  background-color: var(--color);
-  border-radius: 100%;
-  animation: scrolldown-anim 2s infinite;
-  box-sizing: border-box;
-  box-shadow: 0px -5px 3px 1px #ffffff66;
-}
-
-@keyframes scrolldown-anim {
-  0% {
-    opacity: 0;
-    height: 6px;
-  }
-  40% {
-    opacity: 1;
-    height: 10px;
-  }
-  80% {
-    transform: translate(0, 20px);
-    height: 10px;
-    opacity: 0;
-  }
-  100% {
-    height: 3px;
-    opacity: 0;
-  }
-}
-.chevrons {
-  padding: 6px 0 0 0;
-  margin-left: -3px;
-  margin-top: 48px;
-  width: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.chevrondown {
-  margin-top: -6px;
-  position: relative;
-  border: solid var(--color);
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  transform: rotate(45deg);
-}
-
-.chevrondown:nth-child(odd) {
-  animation: pulse 500ms ease infinite alternate;
-}
-
-.chevrondown:nth-child(even) {
-  animation: pulse 500ms ease infinite alternate 250ms;
-}
-
-@keyframes pulse {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 0.5;
-  }
-}
-/* media queries */
 @media screen and (max-width: 640px) {
   .wrapper {
     width: 350px;
@@ -448,7 +278,7 @@ to align it properly */
   --font-name: Righteous;
 }
 
-.this {
+.header-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -534,12 +364,6 @@ to align it properly */
     transform: translatey(calc(var(--axis-y) * -3));
   }
 }
-.about-head {
-  font-size: 35px;
-  font-family: "Acme", sans-serif;
-  color: #fff;
-}
-
 .about-name {
   font-size: 80px;
   font-family: "Cooper Black";
@@ -549,9 +373,6 @@ to align it properly */
 .about-card {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #fff;
-}
-
-.about-text {
   font-size: 30px;
 }
 
@@ -577,7 +398,7 @@ to align it properly */
 .record-button .record-link:before,
 .record-button .record-link:after {
   position: absolute;
-  content: "BUTTON";
+  content: "CONTACT ME";
   height: 55px;
   width: 180px;
   display: flex;
@@ -596,7 +417,7 @@ to align it properly */
 
 .record-button .record-link:after {
   color: #d00000;
-  content: "DOES SOMETHING";
+  content: "LETS CHAT";
   transform: rotateX(90deg) translateZ(25px);
 }
 

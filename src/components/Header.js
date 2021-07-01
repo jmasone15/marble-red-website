@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Header() {
     return (
-        <div className="this">
+        <div className="header-wrapper">
             <ul className="c-rainbow">
                 <li className="c-rainbow__layer c-rainbow__layer--violet">MARBLE RED</li>
                 <li className="c-rainbow__layer c-rainbow__layer--blue">MARBLE RED</li>

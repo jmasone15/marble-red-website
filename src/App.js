@@ -19,12 +19,12 @@ function App() {
   return (
     <Container className="parallax" fluid style={{ padding: "0" }}>
       < Container >
-        <Row style={{ textAlign: "center" }}>
+        <Row className="ta">
           <Col>
             <TopBar setShow={setShow} />
           </Col>
         </Row>
-        <Row style={{ textAlign: "center" }}>
+        <Row className="ta">
           <Col>
             <ContactModal show={show} setShow={setShow} />
           </Col>
@@ -36,7 +36,7 @@ function App() {
             </Col>
           </Row>
           <Row style={{ marginBottom: "300px", marginTop: "450px", textAlign: "center" }}>
-            <Col style={{ textAlign: "center" }}>
+            <Col className="ta">
               <a className="arrow-icon" href="#social">
                 <span className="left-bar"></span>
                 <span className="right-bar"></span>
@@ -62,14 +62,14 @@ function App() {
       <Container fluid className="divider">
         <Row>
           <Col>
-            <h1 style={{ opacity: "0" }}>Blank Title</h1>
+            <h1 className="op0">Blank Title</h1>
           </Col>
         </Row>
       </Container>
       <Container fluid className="parallax-about" id="about">
         <Row>
           <Col>
-            <AboutMe />
+            <AboutMe setShow={setShow} />
           </Col>
         </Row>
       </Container>

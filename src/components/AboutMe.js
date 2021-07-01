@@ -5,7 +5,9 @@ import Col from "react-bootstrap/Col";
 import Fade from "react-reveal/Fade";
 import Slide from "react-reveal/Slide";
 
-export default function AboutMe() {
+export default function AboutMe({ setShow }) {
+
+    const handleShow = () => setShow(true);
 
     return (
         <Container fluid>
@@ -31,7 +33,7 @@ export default function AboutMe() {
                         <Row>
                             <Col style={{ textAlign: "center", marginTop: "30px" }}>
                                 <Fade left>
-                                    <span className="record-button"><span className="record-link"></span></span>
+                                    <span className="record-button" onClick={handleShow}><span className="record-link"></span></span>
                                 </Fade>
                             </Col>
                         </Row>
