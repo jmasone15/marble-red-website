@@ -17,7 +17,8 @@ export default function AboutMe({ setShow }) {
                         <Row>
                             <Col>
                                 <Fade top big cascade>
-                                    <h1 className="about-name">Marble Red</h1>
+                                    <h1 className="about-name">Marble</h1>
+                                    <h1 className="about-name">Red</h1>
                                 </Fade>
                             </Col>
                         </Row>
@@ -39,7 +40,7 @@ export default function AboutMe({ setShow }) {
                         </Row>
                     </Container>
                 </Col>
-                <Col>
+                <Col className="image-display">
                     <Container fluid>
                         <Row>
                             <Col style={{ marginRight: "20px", marginBottom: "20px" }}>

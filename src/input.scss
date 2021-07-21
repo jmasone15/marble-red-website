@@ -347,6 +347,7 @@ html {
   font-size: 80px;
   font-family: "Cooper Black";
   color: #c1121f;
+  text-align: center;
 }
 .about-card {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -445,6 +446,30 @@ html {
       
       z-index:-1;
     }
+  }
+}
+
+@media screen and (max-width: 1025px){
+  .about-card {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 750px){
+  .about-card {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 630px){
+  .image-display {
+    display: none;
+  }
+}
+@media screen and (max-width: 370px){
+  .about-name {
+    font-size: 60px;
+  }
+  .record-button {
+    margin-bottom: 50px;
   }
 }
 
