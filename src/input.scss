@@ -340,6 +340,16 @@ html {
  50% {
   transform: translatey(calc(var(--axis-y) * -3));
  }
+}
+@media screen and (max-width: 600px) {
+  .c-rainbow__layer {
+    font-size: 5rem;
+  }
+} 
+@media screen and (max-width: 450px) {
+  .c-rainbow__layer {
+    font-size: 4rem;
+  }
 } 
 
 // About Classes
