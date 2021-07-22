@@ -36,7 +36,15 @@ video {
   background-image: url("./images/dmaRNJuA.jpeg");
   min-height: 500px;
   background-attachment: fixed;
-  background-position: center;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.about-parallax {
+  background-image: url("./images/22D8FD5A-4A84-4BFF-B9DE-BEA07DDEC15B.JPG");
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
 }
