@@ -9,6 +9,7 @@ import ContactModal from "./components/ContactModal";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Bgv from "./images/marbleRedBGVideo.mp4"
 import { useForm, ValidationError } from '@formspree/react';
 import "./output.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -18,8 +19,15 @@ function App() {
   const [show, setShow] = useState(false);
 
   return (
-    <Container className="parallax" fluid style={{ padding: "0" }}>
-      <Container>
+    <Container fluid style={{ padding: "0" }}>
+      <Container fluid>
+        <video
+          autoPlay
+          loop
+          muted
+        >
+          <source src={Bgv} type="video/mp4" />
+        </video>
         <Row className="ta">
           <Col>
             <TopBar setShow={setShow} />
@@ -53,7 +61,7 @@ function App() {
           </Col>
         </Row>
       </Container>
-      <Container fluid id="music">
+      <Container fluid className="music-parallax" id="music">
         <Row>
           <Col>
             <Music />
@@ -67,7 +75,7 @@ function App() {
           </Col>
         </Row>
       </Container>
-      <Container fluid className="parallax-about" id="about">
+      <Container fluid className="about-parallax" id="about">
         <Row>
           <Col>
             <AboutMe setShow={setShow} />

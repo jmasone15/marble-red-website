@@ -6,6 +6,17 @@ html {
   scroll-behavior: smooth;
 }
 
+video {
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
 .op0 {
   opacity: 0;
 }
@@ -18,8 +29,8 @@ html {
   background-color: transparent;
 }
 
-.parallax {
-  background-image: url("./images/marble-red-01.jpg");
+.music-parallax {
+  background-image: url("./images/dmaRNJuA.jpeg");
   min-height: 500px;
   background-attachment: fixed;
   background-position: center;
