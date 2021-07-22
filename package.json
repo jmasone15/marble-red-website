@@ -2,7 +2,7 @@
   "name": "marble-red-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jmasone15.github.io/marble-red-website/",
+  "homepage": "https://www.marblered.live",
   "dependencies": {
     "@formspree/react": "^2.2.3",
     "@testing-library/jest-dom": "^5.14.1",
