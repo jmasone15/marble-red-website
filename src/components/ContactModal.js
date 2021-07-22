@@ -3,10 +3,12 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Modal from "react-bootstrap/Modal";
+import { useForm, ValidationError } from '@formspree/react';
 
 export default function ContactModal({ show, setShow }) {
 
     const handleClose = () => setShow(false);
+    const [state, handleSubmit] = useForm("mqkwdnvg");
 
     return (
         <Container>
@@ -37,24 +39,26 @@ export default function ContactModal({ show, setShow }) {
                                     </div>
                                 </div>
                                 <div className="screen-body-item">
-                                    <div className="app-form">
-                                        <div className="app-form-group">
-                                            <input className="app-form-control" placeholder="NAME" />
+                                    <form onSubmit={handleSubmit}>
+                                        <div className="app-form">
+                                            <div className="app-form-group">
+                                                <input className="app-form-control" placeholder="NAME" />
+                                            </div>
+                                            <div className="app-form-group">
+                                                <input className="app-form-control" placeholder="EMAIL" />
+                                            </div>
+                                            <div className="app-form-group">
+                                                <input className="app-form-control" placeholder="CONTACT NO" />
+                                            </div>
+                                            <div className="app-form-group message">
+                                                <input className="app-form-control" placeholder="MESSAGE" />
+                                            </div>
+                                            <div className="app-form-group buttons">
+                                                <button className="app-form-button" onClick={handleClose}>CANCEL</button>
+                                                <button type="submit" className="app-form-button">SEND</button>
+                                            </div>
                                         </div>
-                                        <div className="app-form-group">
-                                            <input className="app-form-control" placeholder="EMAIL" />
-                                        </div>
-                                        <div className="app-form-group">
-                                            <input className="app-form-control" placeholder="CONTACT NO" />
-                                        </div>
-                                        <div className="app-form-group message">
-                                            <input className="app-form-control" placeholder="MESSAGE" />
-                                        </div>
-                                        <div className="app-form-group buttons">
-                                            <button className="app-form-button" onClick={handleClose}>CANCEL</button>
-                                            <button className="app-form-button">SEND</button>
-                                        </div>
-                                    </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>

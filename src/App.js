@@ -9,6 +9,7 @@ import ContactModal from "./components/ContactModal";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { useForm, ValidationError } from '@formspree/react';
 import "./output.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 

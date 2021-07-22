@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://jmasone15.github.io/marble-red-website/",
   "dependencies": {
+    "@formspree/react": "^2.2.3",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
