@@ -10,6 +10,10 @@ export default function ContactModal({ show, setShow }) {
     const handleClose = () => setShow(false);
     const [state, handleSubmit] = useForm("mqkwdnvg");
 
+    if (state.succeeded) {
+        handleClose();
+    };
+
     return (
         <Container>
             <Row>
@@ -42,20 +46,69 @@ export default function ContactModal({ show, setShow }) {
                                     <form onSubmit={handleSubmit}>
                                         <div className="app-form">
                                             <div className="app-form-group">
-                                                <input className="app-form-control" placeholder="NAME" />
+                                                <input
+                                                    type="text"
+                                                    id="name"
+                                                    name="name"
+                                                    className="app-form-control"
+                                                    placeholder="NAME"
+                                                />
+                                                <ValidationError
+                                                    prefix="Name"
+                                                    field="name"
+                                                    errors={state.errors}
+                                                />
                                             </div>
                                             <div className="app-form-group">
-                                                <input className="app-form-control" placeholder="EMAIL" />
+                                                <input
+                                                    type="text"
+                                                    id="email"
+                                                    name="email"
+                                                    className="app-form-control"
+                                                    placeholder="EMAIL"
+                                                />
+                                                <ValidationError
+                                                    prefix="Email"
+                                                    field="email"
+                                                    errors={state.errors}
+                                                />
                                             </div>
                                             <div className="app-form-group">
-                                                <input className="app-form-control" placeholder="CONTACT NO" />
+                                                <input
+                                                    type="text"
+                                                    id="contact"
+                                                    name="contact"
+                                                    className="app-form-control"
+                                                    placeholder="CONTACT NO"
+                                                />
+                                                <ValidationError
+                                                    prefix="Contact"
+                                                    field="contact"
+                                                    errors={state.errors}
+                                                />
                                             </div>
                                             <div className="app-form-group message">
-                                                <input className="app-form-control" placeholder="MESSAGE" />
+                                                <input
+                                                    type="text"
+                                                    className="app-form-control"
+                                                    placeholder="MESSAGE"
+                                                    id="message"
+                                                    name="message"
+                                                />
+                                                <ValidationError
+                                                    prefix="Message"
+                                                    field="message"
+                                                    errors={state.errors}
+                                                />
                                             </div>
                                             <div className="app-form-group buttons">
                                                 <button className="app-form-button" onClick={handleClose}>CANCEL</button>
-                                                <button type="submit" className="app-form-button">SEND</button>
+                                                <button
+                                                    type="submit"
+                                                    className="app-form-button"
+                                                    disabled={state.submitting}>
+                                                    SEND
+                                                </button>
                                             </div>
                                         </div>
                                     </form>
