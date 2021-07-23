@@ -658,4 +658,14 @@ video {
   transform: scale(1.2);
 }
 
+@media screen and (max-width: 500px) {
+  .screen-body-item.left {
+    display: none;
+  }
+
+  .app-form-button {
+    margin: 0 5px;
+  }
+}
+
 /*# sourceMappingURL=output.css.map */

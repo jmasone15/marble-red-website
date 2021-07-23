@@ -102,13 +102,13 @@ export default function ContactModal({ show, setShow }) {
                                                 />
                                             </div>
                                             <div className="app-form-group buttons">
-                                                <button className="app-form-button" onClick={handleClose}>CANCEL</button>
                                                 <button
                                                     type="submit"
                                                     className="app-form-button"
                                                     disabled={state.submitting}>
                                                     SEND
                                                 </button>
+                                                <button className="app-form-button" onClick={handleClose}>CANCEL</button>
                                             </div>
                                         </div>
                                     </form>
