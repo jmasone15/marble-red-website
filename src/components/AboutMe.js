@@ -4,6 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Fade from "react-reveal/Fade";
 import Slide from "react-reveal/Slide";
+import MRImage from "../images/22D8FD5A-4A84-4BFF-B9DE-BEA07DDEC15B.JPG"
 
 export default function AboutMe({ setShow }) {
 
@@ -11,63 +12,28 @@ export default function AboutMe({ setShow }) {
 
     return (
         <Container fluid>
-            <Row style={{ marginBottom: "100px", marginTop: "200px" }}>
-                <Col>
-                    <Container fluid>
-                        <Row>
-                            <Col>
-                                <Fade top big cascade>
-                                    <h1 className="about-name">Marble</h1>
-                                    <h1 className="about-name">Red</h1>
-                                </Fade>
-                            </Col>
-                        </Row>
-                        <Row>
-                            <Col style={{ marginTop: "30px" }}>
-                                <Slide top cascade>
-                                    <div className="about-card">
-                                        <p className="about-text">blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah</p>
-                                    </div>
-                                </Slide>
-                            </Col>
-                        </Row>
-                        <Row>
-                            <Col style={{ textAlign: "center", marginTop: "30px" }}>
-                                <Fade left>
-                                    <span className="record-button" onClick={handleShow}><span className="record-link"></span></span>
-                                </Fade>
-                            </Col>
-                        </Row>
-                    </Container>
+            <Row>
+                <Col className="about-header-image">
+                    <Fade top big cascade>
+                        <h1 style={{ fontSize: "80px" }}>Marble Red</h1>
+                    </Fade>
+                    <img alt="Marble Red" src={MRImage} className="about-image" />
                 </Col>
-                <Col className="image-display">
-                    <Container fluid>
-                        <Row>
-                            <Col style={{ marginRight: "20px", marginBottom: "20px" }}>
-                                <div className="image-container">
-                                    <div
-                                        className="image-container__image">
-                                    </div>
-                                </div>
-                            </Col>
-                            <Col style={{ marginBottom: "20px" }}>
-                                <div className="image-container">
-                                    <div
-                                        className="image-container__image">
-                                    </div>
-                                </div>
-                            </Col>
-                        </Row>
-                        <Row>
-                            <Col>
-                                <div className="image-container">
-                                    <div
-                                        className="image-container__image">
-                                    </div>
-                                </div>
-                            </Col>
-                        </Row>
-                    </Container>
+                <Col className="about-text">
+                    <p>
+                        <p className="about-marble-red-text">Marble Red</p> was born in September 1185 in the area now known as the Pacific Ocean. He built
+                        his first guitar on his two-month birthday using the shell of a sea turtle and Dave Grohl’s hair,
+                        and after learning what a power chord is, hasn’t stopped playing since.
+                    </p>
+                    <p>
+                        His music is a mix of rock, lo-fi, pop, and indie that contains no added glucose while still
+                        providing enough calories for the average person’s musical needs.
+                    </p>
+                    <p>
+                        Want <p className="about-marble-red-text">Marble Red</p> at your venue? Shoot him a message. Now booking at all stages, centers, halls,
+                        bars, auditoriums, and birthday parties.
+                    </p>
+                    <span className="record-button" onClick={handleShow}><span className="record-link"></span></span>
                 </Col>
             </Row>
         </Container>

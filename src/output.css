@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
 @import url("https://db.onlinewebfonts.com/c/9a4b138bd9c8e1eba20dbd6a0bb1d832?family=Cooper+Black");
 @import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&family=Zen+Tokyo+Zoo&display=swap");
 html {
   scroll-behavior: smooth;
 }
@@ -12,7 +13,7 @@ video {
   left: 50%;
   top: 50%;
   height: 100%;
-  object-fit: cover;
+  object-fit: fill;
   transform: translate(-50%, -50%);
   z-index: -1;
 }
@@ -30,8 +31,7 @@ video {
 }
 
 .music-parallax {
-  background-image: url("./images/dmaRNJuA.jpeg");
-  min-height: 500px;
+  background-image: url("./images/IMG-1351.JPG");
   background-attachment: fixed;
   background-position: bottom;
   background-repeat: no-repeat;
@@ -39,10 +39,9 @@ video {
 }
 
 .about-parallax {
-  background-image: url("./images/22D8FD5A-4A84-4BFF-B9DE-BEA07DDEC15B.JPG");
-  min-height: 500px;
+  background-image: url("./images/dmaRNJuA.jpeg");
   background-attachment: fixed;
-  background-position: top;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -120,8 +119,8 @@ video {
   }
 }
 .arrow-row {
-  margin-bottom: 300px;
-  margin-top: 450px;
+  margin-bottom: 200px;
+  margin-top: 321px;
 }
 
 @media only screen and (max-width: 989px) {
@@ -440,7 +439,7 @@ video {
   display: inline-flex;
   width: 180px;
   height: 55px;
-  margin: 0 15px;
+  margin: 15px 15px;
   perspective: 1000px;
   cursor: pointer;
 }
@@ -666,6 +665,42 @@ video {
   .app-form-button {
     margin: 0 5px;
   }
+}
+.about-header-image {
+  display: flex;
+  color: #e92f2f;
+  margin: 75px 10px;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Satisfy", cursive;
+}
+
+.about-image {
+  height: 500px;
+  width: 500px;
+  margin: 30px 0;
+  border: 5px white solid;
+  border-radius: 50%;
+}
+
+.about-marble-red-text {
+  font-family: "Satisfy", cursive;
+  color: #e92f2f;
+  display: inline;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  margin: 75px 10px;
+  border-radius: 8px;
+  background-color: rgba(85, 84, 84, 0.75);
+  align-items: center;
+  justify-content: center;
+  font-family: "Zen Tokyo Zoo", cursive;
 }
 
 /*# sourceMappingURL=output.css.map */

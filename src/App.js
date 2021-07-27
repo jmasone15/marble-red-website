@@ -20,14 +20,14 @@ function App() {
 
   return (
     <Container fluid style={{ padding: "0" }}>
+      <video
+        autoPlay
+        loop
+        muted
+      >
+        <source src={Bgv} type="video/mp4" />
+      </video>
       <Container fluid>
-        <video
-          autoPlay
-          loop
-          muted
-        >
-          <source src={Bgv} type="video/mp4" />
-        </video>
         <Row className="ta">
           <Col>
             <TopBar setShow={setShow} />
