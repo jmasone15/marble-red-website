@@ -20,7 +20,7 @@ export default function Music() {
                     <Fade left>
                         <Carousel activeIndex={index} onSelect={handleSelect} style={{ paddingBottom: "100px" }} controls={false}>
                             <Carousel.Item interval={10000000}>
-                                <iframe title="For You" src="https://open.spotify.com/embed/track/6Q0LgI8oyye3lWsarz2AIG" width="100%" height="600" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                                <iframe title="For You" src="https://open.spotify.com/embed/track/6Q0LgI8oyye3lWsarz2AIG" width="50%" height="600" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
                             </Carousel.Item>
                             <Carousel.Item interval={10000000}>
                                 <iframe title="20 Deep" src="https://open.spotify.com/embed/track/5UVK6Ey02ZZflXAUK8Jd0L" width="100%" height="600" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
