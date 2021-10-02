@@ -666,27 +666,27 @@ video {
     margin: 0 5px;
   }
 }
+
 .about-header-image {
-  display: flex;
   color: #e92f2f;
   margin: 75px 10px;
+  display: flex;
   flex-direction: column;
+  font-family: "Cooper Black";
   align-items: center;
-  font-family: "Satisfy", cursive;
 }
 
 .about-image {
   height: 500px;
   width: 500px;
   margin: 30px 0;
-  border: 5px white solid;
-  border-radius: 50%;
 }
 
 .about-marble-red-text {
-  font-family: "Satisfy", cursive;
-  color: #e92f2f;
+  font-family: "Cooper Black";
+  color: #e94b4b;
   display: inline;
+  font-size: 30px;
 }
 
 .about-text {
@@ -694,13 +694,23 @@ video {
   flex-direction: column;
   text-align: center;
   color: white;
-  font-size: 30px;
+  font-size: 25px;
   margin: 75px 10px;
   border-radius: 8px;
   background-color: rgba(85, 84, 84, 0.75);
   align-items: center;
   justify-content: center;
-  font-family: "Zen Tokyo Zoo", cursive;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 25px;
+}
+
+@media screen and (max-width: 1000px) {
+  .about-image {
+    display: none;
+  }
+  .about-header-image {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=output.css.map */

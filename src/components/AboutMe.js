@@ -3,7 +3,6 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Fade from "react-reveal/Fade";
-import Slide from "react-reveal/Slide";
 import MRImage from "../images/22D8FD5A-4A84-4BFF-B9DE-BEA07DDEC15B.JPG"
 
 export default function AboutMe({ setShow }) {
@@ -12,11 +11,9 @@ export default function AboutMe({ setShow }) {
 
     return (
         <Container fluid>
-            <Row>
+            <Row className="about-container">
                 <Col className="about-header-image">
-                    <Fade top big cascade>
-                        <h1 style={{ fontSize: "80px" }}>Marble Red</h1>
-                    </Fade>
+                    <h1 style={{fontSize: "60px"}}>Marble Red</h1>
                     <img alt="Marble Red" src={MRImage} className="about-image" />
                 </Col>
                 <Col className="about-text">
@@ -30,7 +27,7 @@ export default function AboutMe({ setShow }) {
                         providing enough calories for the average person’s musical needs.
                     </p>
                     <p>
-                        Want <p className="about-marble-red-text">Marble Red</p> at your venue? Shoot him a message. Now booking at all stages, centers, halls,
+                        Want Marble Red at your venue? Shoot him a message. Now booking at all stages, centers, halls,
                         bars, auditoriums, and birthday parties.
                     </p>
                     <span className="record-button" onClick={handleShow}><span className="record-link"></span></span>
