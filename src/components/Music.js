@@ -14,7 +14,7 @@ export default function Music() {
             <Row style={{ marginTop: "200px", marginBottom: "200px" }}>
                 <Col>
                     <Fade left>
-                        <Carousel autoPlay emulateTouch={true} showThumbs={false} showIndicators={false} showStatus={false} swipeable={true} showIndicators={false} style={{ paddingBottom: "100px" }} >
+                        <Carousel autoPlay emulateTouch={true} showThumbs={false} showIndicators={false} showStatus={false} swipeable={true} showIndicators={false} >
                             <div>
                                 <img
                                     className="d-block w-100"

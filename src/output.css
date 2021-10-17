@@ -3,6 +3,8 @@
 @import url("https://db.onlinewebfonts.com/c/9a4b138bd9c8e1eba20dbd6a0bb1d832?family=Cooper+Black");
 @import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Satisfy&family=Zen+Tokyo+Zoo&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Bungee+Inline&family=Bungee+Shade&family=Days+One&family=Frijole&family=Fugaz+One&family=Goblin+One&family=Monoton&family=Pattaya&family=Shrikhand&family=Titan+One&family=Tourney:ital,wght@1,500&display=swap');
+
 html {
   scroll-behavior: smooth;
 }
@@ -16,6 +18,50 @@ video {
   object-fit: fill;
   transform: translate(-50%, -50%);
   z-index: -1;
+}
+
+.container-wrapper {
+  margin-top: -24px;
+}
+
+@media only screen and (max-width: 1500px) {
+  .container-wrapper {
+    margin-top: -81px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .container-wrapper {
+    margin-top: -111px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .container-wrapper {
+    margin-top: -254px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container-wrapper {
+    margin-top: -156px
+  }
+}
+
+.header-wrapper {
+  font-family: "Cooper Black";
+  /* font-family: 'Berkshire Swash', cursive;
+  font-family: 'Bungee Inline', cursive;
+  font-family: 'Bungee Shade', cursive;
+  font-family: 'Days One', sans-serif;
+  font-family: 'Frijole', cursive;
+  font-family: 'Fugaz One', cursive;
+  font-family: 'Goblin One', cursive;
+  font-family: 'Monoton', cursive;
+  font-family: 'Pattaya', sans-serif;
+  font-family: 'Shrikhand', cursive;
+  font-family: 'Titan One', cursive;
+  font-family: 'Tourney', cursive; */
 }
 
 .op0 {
@@ -331,10 +377,6 @@ video {
   --color-yellow: #FFBE0B;
   --color-foreground: var(--color-pink);
   --font-name: Righteous;
-}
-
-.header-wrapper {
-  font-family: "Cooper Black";
 }
 
 .c-rainbow {

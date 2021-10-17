@@ -19,7 +19,7 @@ function App() {
   const [show, setShow] = useState(false);
 
   return (
-    <Container fluid style={{ padding: "0" }}>
+    <Container fluid className="container-wrapper" style={{padding: "0"}}>
       <video
         autoPlay
         loop
@@ -38,7 +38,7 @@ function App() {
             <ContactModal show={show} setShow={setShow} />
           </Col>
         </Row>
-        <Container fluid id="home" className="header-container">
+        <Container fluid id="home" className="header-container background">
           <Row>
             <Col>
               <Header />
